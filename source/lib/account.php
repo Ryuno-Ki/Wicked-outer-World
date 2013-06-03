@@ -75,7 +75,10 @@ class Account extends Lisbeth_Entity {
 		$database = new Lisbeth_Database();
 		$name = $database->escape($name);
 		$email = $database->escape($email);
-		$password = md5($password);
+		/* MD5 algorithm is too fast to ensure safe passwords
+		 * $password = md5($password);
+		 */
+		$password = crypt($password);
 		$shipId = (int)$shipId;
 		$language = $database->escape($language);
 
