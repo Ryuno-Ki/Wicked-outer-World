@@ -1,16 +1,16 @@
 Wicked-outer-World
 ==================
 
-This project contains the source code for [Wicked-outer-World][w-o-w].
+This project contains the source code for [Wicked-outer-World][wow].
 This space browser game is actually in an Open Alpha phase, but you can go on and register if you like.
 
 About Me
---------------
+--------
 
-Pascal "Artimon" Dittrich [PAD-Soft] - Web-Developer - Germany
+Pascal "[Artimon][]" Dittrich [PAD-Soft][] - Web-Developer - Germany
 
 System requirements
---------------
+-------------------
 
 - PHP Version 5.3
 - PHPUnit
@@ -18,8 +18,14 @@ System requirements
 - MySQL Database (MyISAM driver)
 
 Further information
---------------
+-------------------
 
 The used file encoding is windows-1252 / ansicode. It is vital to stick
-to that encoding throughout all files for unit tests and the valkyrie
+to that encoding throughout all files for unit tests and the [valkyrie][]
 autoloader that creates files depending on the source encoding.
+
+
+[wow]:      http://wicked-outer-world.com
+[artimon]:  https://github.com/Artimon
+[pad-soft]: http://www.pad-soft.de/
+[valkyrie]: https://github.com/Artimon/valkyrie
