@@ -1,0 +1,1336 @@
+
+Strict Standards: Declaration of parserTag::getString() should be compatible with parserStringWithInlineTags::getString($trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DocBlockTags.inc on line 185
+
+Strict Standards: Declaration of parserTag::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DocBlockTags.inc on line 185
+
+Strict Standards: Declaration of parserCode::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 109
+
+Strict Standards: Declaration of parserPre::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 143
+
+Strict Standards: Declaration of parserB::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 176
+
+Strict Standards: Declaration of parserI::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 209
+
+Strict Standards: Declaration of parserDescVar::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 242
+
+Strict Standards: Declaration of parserSamp::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 275
+
+Strict Standards: Declaration of parserKbd::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 308
+
+Strict Standards: Declaration of parserBr::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 341
+
+Strict Standards: Declaration of parserList::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/DescHTML.inc on line 421
+
+Strict Standards: Declaration of parserPackagePage::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/ParserElements.inc on line 2052
+
+Strict Standards: Declaration of phpDocumentorTWordParser::backupPos() should be compatible with WordParser::backupPos($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTWordParser.inc on line 385
+
+Strict Standards: Declaration of phpDocumentorTParser::handleDesc() should be compatible with Parser::handleDesc($word, $pevent) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::handleTags() should be compatible with Parser::handleTags($word, $pevent) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::defaultTagHandler() should be compatible with Parser::defaultTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::packageTagHandler() should be compatible with Parser::packageTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::exampleTagHandler() should be compatible with Parser::exampleTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::categoryTagHandler() should be compatible with Parser::categoryTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::globalTagHandler() should be compatible with Parser::globalTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::staticvarTagHandler() should be compatible with Parser::staticvarTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::usesTagHandler() should be compatible with Parser::usesTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::paramTagHandler() should be compatible with Parser::paramTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::returnTagHandler() should be compatible with Parser::returnTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::varTagHandler() should be compatible with Parser::varTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::propertyTagHandler() should be compatible with Parser::propertyTagHandler($word) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentorTParser::configWordParser() should be compatible with Parser::configWordParser($e) in /usr/share/php/PhpDocumentor/phpDocumentor/phpDocumentorTParser.inc on line 2945
+
+Strict Standards: Declaration of phpDocumentor_HighlightWordParser::setup() should be compatible with WordParser::setup(&$input) in /usr/share/php/PhpDocumentor/phpDocumentor/HighlightParser.inc on line 208
+
+Strict Standards: Declaration of phpDocumentor_HighlightWordParser::backupPos() should be compatible with WordParser::backupPos($word) in /usr/share/php/PhpDocumentor/phpDocumentor/HighlightParser.inc on line 208
+
+Strict Standards: Declaration of phpDocumentor_HighlightParser::parse() should be compatible with Parser::parse(&$parse_data, $path, $base = 0, $packages = false) in /usr/share/php/PhpDocumentor/phpDocumentor/HighlightParser.inc on line 2602
+
+Strict Standards: Declaration of phpDocumentor_HighlightParser::commonDocBlock() should be compatible with phpDocumentorTParser::commonDocBlock($word, $pevent, $deschandler) in /usr/share/php/PhpDocumentor/phpDocumentor/HighlightParser.inc on line 2602
+
+Strict Standards: Declaration of phpDocumentor_HighlightParser::setupStates() should be compatible with Parser::setupStates() in /usr/share/php/PhpDocumentor/phpDocumentor/HighlightParser.inc on line 2602
+
+Strict Standards: Declaration of phpDocumentor_TutorialHighlightParser::parse() should be compatible with Parser::parse(&$parse_data, $path, $base = 0, $packages = false) in /usr/share/php/PhpDocumentor/phpDocumentor/TutorialHighlightParser.inc on line 527
+
+Strict Standards: Declaration of phpDocumentor_TutorialHighlightParser::setupStates() should be compatible with Parser::setupStates() in /usr/share/php/PhpDocumentor/phpDocumentor/TutorialHighlightParser.inc on line 527
+
+Strict Standards: Declaration of parserDescParser::parse() should be compatible with Parser::parse(&$parse_data, $path, $base = 0, $packages = false) in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDescCleanup.inc on line 1486
+
+Strict Standards: Declaration of parserDescParser::setupStates() should be compatible with Parser::setupStates() in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDescCleanup.inc on line 1486
+
+Strict Standards: Declaration of parserCData::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/PackagePageElements.inc on line 99
+
+Strict Standards: Declaration of parserXMLDocBookTag::Convert() should be compatible with parserStringWithInlineTags::Convert(&$converter, $postprocess = true, $trim = true) in /usr/share/php/PhpDocumentor/phpDocumentor/PackagePageElements.inc on line 458
+
+Strict Standards: Declaration of XMLPackagePageParser::parse() should be compatible with Parser::parse(&$parse_data, $path, $base = 0, $packages = false) in /usr/share/php/PhpDocumentor/phpDocumentor/XMLpackagePageParser.inc on line 643
+
+Strict Standards: Declaration of methodLink::addLink() should be compatible with abstractLink::addLink($path, $fileAlias, $name, $package, $subpackage, $category = false) in /usr/share/php/PhpDocumentor/phpDocumentor/LinkClasses.inc on line 267
+
+Strict Standards: Declaration of __dummyConverter::setTemplateDir() should be compatible with Converter::setTemplateDir($dir) in /usr/share/php/PhpDocumentor/phpDocumentor/Converter.inc on line 5459
+
+Strict Standards: Declaration of __dummyConverter::setTargetDir() should be compatible with Converter::setTargetDir($dir) in /usr/share/php/PhpDocumentor/phpDocumentor/Converter.inc on line 5459
+PHP Version 5.4.15-pl0-gentoo
+phpDocumentor version 1.4.3
+
+Parsing configuration file phpDocumentor.ini...
+   (found in /usr/share/php/data/PhpDocumentor/)...
+
+done
+Maximum memory usage set at 256M after considering php.ini...
+using tokenizer Parser
+
+Strict Standards: Non-static method Io::isIncludeable() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/IntermediateParser.inc on line 1740
+
+Strict Standards: Declaration of HTMLframesConverter::getPageLink() should be compatible with Converter::getPageLink($expr, $package, $path = false, $text = false, $packages = false) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::getId() should be compatible with Converter::getId(&$link) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertTutorial() should be compatible with & Converter::convertTutorial(&$element) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertMethod() should be compatible with Converter::convertMethod(&$element, $additions = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertVar() should be compatible with Converter::convertVar(&$element, $additions = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertConst() should be compatible with Converter::convertConst(&$element, $additions = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertGlobal() should be compatible with Converter::convertGlobal(&$element, $addition = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertDefine() should be compatible with Converter::convertDefine(&$element, $addition = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertInclude() should be compatible with Converter::convertInclude(&$element, $addition = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::convertFunction() should be compatible with Converter::convertFunction(&$element, $addition = Array) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+
+Strict Standards: Declaration of HTMLframesConverter::Output() should be compatible with Converter::Output($title) in /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc on line 1889
+Hidden /home/andre/src/Wicked-outer-World/.gitmodules Ignored
+Hidden /home/andre/src/Wicked-outer-World/.git Ignored
+Hidden /home/andre/src/Wicked-outer-World/source/lib/.accuracy.php.swp Ignored
+
+
+Grabbing README/INSTALL/CHANGELOG
+
+done
+
+
+Tutorial/Extended Documentation Parsing Stage
+
+done
+
+
+General Parsing Stage
+
+Reading file /home/andre/src/Wicked-outer-World/ext/jQuery/jquery-1.6.2.min.js -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/ext/jQuery/jquery-ui.min.js -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/ext/jQuery/jquery-1.8.0.min.js -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/ext/tipTip/tipTip.css -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/ext/tipTip/jquery.tipTip.minified.js -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/sql/init.sql -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/readme.md -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/readme.md~ -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemodulehangar.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemodulehangar.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleHangar
+WARNING in starbasemodulehangar.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemodulehangar.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemoduleacademy.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemoduleacademy.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleAcademy
+WARNING in starbasemoduleacademy.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemoduleacademy.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemoduletradedeck.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemoduletradedeck.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleTradeDeck
+WARNING in starbasemoduletradedeck.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemoduletradedeck.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/price.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in price.php on line 2: no @package tag was used in a DocBlock for class Price
+WARNING in price.php on line 46: File "/home/andre/src/Wicked-outer-World/source/lib/price.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendersidebar.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendersidebar.php on line 5: no @package tag was used in a DocBlock for class RenderSidebar
+WARNING in rendersidebar.php on line 166: File "/home/andre/src/Wicked-outer-World/source/lib/rendersidebar.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckstarships.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckstarships.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckStarships
+WARNING in rendertradedeckstarships.php on line 106: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckstarships.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderlogin.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderlogin.php on line 2: no @package tag was used in a DocBlock for class RenderLogin
+WARNING in renderlogin.php on line 126: File "/home/andre/src/Wicked-outer-World/source/lib/renderlogin.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckentrance.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckentrance.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckEntrance
+WARNING in rendertradedeckentrance.php on line 21: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckentrance.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/accountfactory.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in accountfactory.php on line 2: no @package tag was used in a DocBlock for class AccountFactory
+WARNING in accountfactory.php on line 44: File "/home/andre/src/Wicked-outer-World/source/lib/accountfactory.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderacademycourse.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderacademycourse.php on line 2: no @package tag was used in a DocBlock for class RenderAcademyCourse
+WARNING in renderacademycourse.php on line 97: File "/home/andre/src/Wicked-outer-World/source/lib/renderacademycourse.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererquarterslounge.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererquarterslounge.php on line 2: no @package tag was used in a DocBlock for class RendererQuartersLounge
+WARNING in rendererquarterslounge.php on line 69: File "/home/andre/src/Wicked-outer-World/source/lib/rendererquarterslounge.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfactorycrafter.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfactorycrafter.php on line 5: no @package tag was used in a DocBlock for class RenderFactoryCrafter
+WARNING in renderfactorycrafter.php on line 130: File "/home/andre/src/Wicked-outer-World/source/lib/renderfactorycrafter.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionabstract.php on line 2: no @package tag was used in a DocBlock for class ActionAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in actionabstract.php on line 4: File "/home/andre/src/Wicked-outer-World/source/lib/actionabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/stats.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in stats.php on line 5: no @package tag was used in a DocBlock for class Stats
+WARNING in stats.php on line 88: File "/home/andre/src/Wicked-outer-World/source/lib/stats.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionprofilehealthcare.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionprofilehealthcare.php on line 2: no @package tag was used in a DocBlock for class ActionProfileHealthCare
+WARNING in actionprofilehealthcare.php on line 68: File "/home/andre/src/Wicked-outer-World/source/lib/actionprofilehealthcare.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/levelprogress.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in levelprogress.php on line 2: no @package tag was used in a DocBlock for class LevelProgress
+WARNING in levelprogress.php on line 64: File "/home/andre/src/Wicked-outer-World/source/lib/levelprogress.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerranking.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerranking.php on line 2: no @package tag was used in a DocBlock for class ControllerRanking
+WARNING in controllerranking.php on line 16: File "/home/andre/src/Wicked-outer-World/source/lib/controllerranking.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/register.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in register.php on line 2: no @package tag was used in a DocBlock for class Register
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in register.php on line 116: File "/home/andre/src/Wicked-outer-World/source/lib/register.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionfighttimer.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionfighttimer.php on line 10: no @package tag was used in a DocBlock for class ActionFightTimer
+WARNING in actionfighttimer.php on line 340: File "/home/andre/src/Wicked-outer-World/source/lib/actionfighttimer.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerlogin.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerlogin.php on line 2: no @package tag was used in a DocBlock for class ControllerLogin
+WARNING in controllerlogin.php on line 55: File "/home/andre/src/Wicked-outer-World/source/lib/controllerlogin.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeck.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeck.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeck
+WARNING in rendertradedeck.php on line 35: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeck.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllertradedeck.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllertradedeck.php on line 2: no @package tag was used in a DocBlock for class ControllerTradeDeck
+WARNING in controllertradedeck.php on line 36: File "/home/andre/src/Wicked-outer-World/source/lib/controllertradedeck.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerentities.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerentities.php on line 2: no @package tag was used in a DocBlock for class ControllerEntities
+WARNING in controllerentities.php on line 16: File "/home/andre/src/Wicked-outer-World/source/lib/controllerentities.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/cache.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in cache.php on line 5: no @package tag was used in a DocBlock for class cache
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in cache.php on line 76: File "/home/andre/src/Wicked-outer-World/source/lib/cache.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionhangarstartrip.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionhangarstartrip.php on line 2: no @package tag was used in a DocBlock for class ActionHangarStarTrip
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in actionhangarstartrip.php on line 38: File "/home/andre/src/Wicked-outer-World/source/lib/actionhangarstartrip.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerlogout.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerlogout.php on line 2: no @package tag was used in a DocBlock for class ControllerLogout
+WARNING in controllerlogout.php on line 14: File "/home/andre/src/Wicked-outer-World/source/lib/controllerlogout.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/entitypool.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in entitypool.php on line 5: no @package tag was used in a DocBlock for class entityPool
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in entitypool.php on line 13: File "/home/andre/src/Wicked-outer-World/source/lib/entitypool.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderhangarentrance.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderhangarentrance.php on line 2: no @package tag was used in a DocBlock for class RenderHangarEntrance
+WARNING in renderhangarentrance.php on line 11: File "/home/andre/src/Wicked-outer-World/source/lib/renderhangarentrance.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionskirmishopponents.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionskirmishopponents.php on line 2: no @package tag was used in a DocBlock for class ActionSkirmishOpponents
+WARNING in actionskirmishopponents.php on line 54: File "/home/andre/src/Wicked-outer-World/source/lib/actionskirmishopponents.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/messagessent.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in messagessent.php on line 2: no @package tag was used in a DocBlock for class MessagesSent
+WARNING in messagessent.php on line 14: File "/home/andre/src/Wicked-outer-World/source/lib/messagessent.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/bank.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in bank.php on line 2: no @package tag was used in a DocBlock for class Bank
+WARNING in bank.php on line 127: File "/home/andre/src/Wicked-outer-World/source/lib/bank.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/initial.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in initial.php on line 2: no @package tag was used in a DocBlock for class Initial
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in initial.php on line 34: File "/home/andre/src/Wicked-outer-World/source/lib/initial.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderhangardesigner.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderhangardesigner.php on line 11: no @package tag was used in a DocBlock for class RenderHangarDesigner
+WARNING in renderhangardesigner.php on line 181: File "/home/andre/src/Wicked-outer-World/source/lib/renderhangardesigner.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/entityloader.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in entityloader.php on line 2: no @package tag was used in a DocBlock for class EntityLoader
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in entityloader.php on line 10: Unknown tag "@const" used
+WARNING in entityloader.php on line 390: File "/home/andre/src/Wicked-outer-World/source/lib/entityloader.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendermessagewrite.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendermessagewrite.php on line 2: no @package tag was used in a DocBlock for class RenderMessageWrite
+WARNING in rendermessagewrite.php on line 134: File "/home/andre/src/Wicked-outer-World/source/lib/rendermessagewrite.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/objectpool.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in objectpool.php on line 5: no @package tag was used in a DocBlock for class ObjectPool
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in objectpool.php on line 187: File "/home/andre/src/Wicked-outer-World/source/lib/objectpool.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemoduleabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemoduleabstract.php on line 16: no @package tag was used in a DocBlock for class StarbaseModuleAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in starbasemoduleabstract.php on line 31: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemoduleabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendermessagessent.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendermessagessent.php on line 2: no @package tag was used in a DocBlock for class RenderMessagesSent
+WARNING in rendermessagessent.php on line 60: File "/home/andre/src/Wicked-outer-World/source/lib/rendermessagessent.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerregister.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerregister.php on line 2: no @package tag was used in a DocBlock for class ControllerRegister
+WARNING in controllerregister.php on line 12: File "/home/andre/src/Wicked-outer-World/source/lib/controllerregister.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/fiddle.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in fiddle.php on line 5: no @package tag was used in a DocBlock for class Fiddle
+WARNING in fiddle.php on line 140: File "/home/andre/src/Wicked-outer-World/source/lib/fiddle.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemodulefactory.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemodulefactory.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleFactory
+WARNING in starbasemodulefactory.php on line 24: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemodulefactory.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/money.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in money.php on line 2: no @package tag was used in a DocBlock for class Money
+WARNING in money.php on line 37: File "/home/andre/src/Wicked-outer-World/source/lib/money.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderlogin.php~ -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerhangar.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerhangar.php on line 2: no @package tag was used in a DocBlock for class ControllerHangar
+WARNING in controllerhangar.php on line 34: File "/home/andre/src/Wicked-outer-World/source/lib/controllerhangar.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/content.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in content.php on line 5: no @package tag was used in a DocBlock for class Content
+WARNING in content.php on line 152: File "/home/andre/src/Wicked-outer-World/source/lib/content.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllermessages.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllermessages.php on line 2: no @package tag was used in a DocBlock for class ControllerMessages
+WARNING in controllermessages.php on line 32: File "/home/andre/src/Wicked-outer-World/source/lib/controllermessages.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderacademytraining.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderacademytraining.php on line 2: no @package tag was used in a DocBlock for class RenderAcademyTraining
+WARNING in renderacademytraining.php on line 119: File "/home/andre/src/Wicked-outer-World/source/lib/renderacademytraining.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerpiratenews.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerpiratenews.php on line 2: no @package tag was used in a DocBlock for class ControllerPirateNews
+WARNING in controllerpiratenews.php on line 7: File "/home/andre/src/Wicked-outer-World/source/lib/controllerpiratenews.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/accountsubclass.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in accountsubclass.php on line 5: no @package tag was used in a DocBlock for class AccountSubclass
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in accountsubclass.php on line 31: File "/home/andre/src/Wicked-outer-World/source/lib/accountsubclass.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/format.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in format.php on line 2: no @package tag was used in a DocBlock for class Format
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in format.php on line 53: File "/home/andre/src/Wicked-outer-World/source/lib/format.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/eventbox.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in eventbox.php on line 4: no @package tag was used in a DocBlock for class EventBox
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in eventbox.php on line 114: File "/home/andre/src/Wicked-outer-World/source/lib/eventbox.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfactoryengineer.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfactoryengineer.php on line 2: no @package tag was used in a DocBlock for class RenderFactoryEngineer
+WARNING in renderfactoryengineer.php on line 54: File "/home/andre/src/Wicked-outer-World/source/lib/renderfactoryengineer.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderhangarmissions.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderhangarmissions.php on line 2: no @package tag was used in a DocBlock for class RenderHangarMissions
+WARNING in renderhangarmissions.php on line 113: File "/home/andre/src/Wicked-outer-World/source/lib/renderhangarmissions.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/messagesreceived.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in messagesreceived.php on line 2: no @package tag was used in a DocBlock for class MessagesReceived
+WARNING in messagesreceived.php on line 14: File "/home/andre/src/Wicked-outer-World/source/lib/messagesreceived.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertechinfo.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertechinfo.php on line 2: no @package tag was used in a DocBlock for class RenderTechInfo
+WARNING in rendertechinfo.php on line 328: File "/home/andre/src/Wicked-outer-World/source/lib/rendertechinfo.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/router.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in router.php on line 2: no @package tag was used in a DocBlock for class Router
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in router.php on line 177: File "/home/andre/src/Wicked-outer-World/source/lib/router.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starshipsubclass.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starshipsubclass.php on line 5: no @package tag was used in a DocBlock for class StarshipSubclass
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in starshipsubclass.php on line 28: File "/home/andre/src/Wicked-outer-World/source/lib/starshipsubclass.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderimprint.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderimprint.php on line 2: no @package tag was used in a DocBlock for class RenderImprint
+WARNING in renderimprint.php on line 46: File "/home/andre/src/Wicked-outer-World/source/lib/renderimprint.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckshop.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckshop.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckShop
+WARNING in rendertradedeckshop.php on line 207: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckshop.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerfactory.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerfactory.php on line 2: no @package tag was used in a DocBlock for class ControllerFactory
+WARNING in controllerfactory.php on line 32: File "/home/andre/src/Wicked-outer-World/source/lib/controllerfactory.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/techcontainerabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techcontainerabstract.php on line 8: no @package tag was used in a DocBlock for class techContainerAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techcontainerabstract.php on line 100: File "/home/andre/src/Wicked-outer-World/source/lib/techcontainerabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemoduleskirmish.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemoduleskirmish.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleSkirmish
+WARNING in starbasemoduleskirmish.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemoduleskirmish.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckgrocer.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckgrocer.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckGrocer
+WARNING in rendertradedeckgrocer.php on line 111: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckgrocer.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererquartersquarter.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererquartersquarter.php on line 2: no @package tag was used in a DocBlock for class RendererQuartersQuarter
+WARNING in rendererquartersquarter.php on line 11: File "/home/andre/src/Wicked-outer-World/source/lib/rendererquartersquarter.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/techcontainerinterface.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techcontainerinterface.php on line 2: no @package tag was used in a DocBlock for interface TechContainerInterface
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techcontainerinterface.php on line 47: File "/home/andre/src/Wicked-outer-World/source/lib/techcontainerinterface.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderhangarabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderhangarabstract.php on line 2: no @package tag was used in a DocBlock for class RenderHangarAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in renderhangarabstract.php on line 23: File "/home/andre/src/Wicked-outer-World/source/lib/renderhangarabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemodulequarters.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemodulequarters.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleQuarters
+WARNING in starbasemodulequarters.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemodulequarters.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/account.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in account.php on line 39: no @package tag was used in a DocBlock for class Account
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in account.php on line 497: File "/home/andre/src/Wicked-outer-World/source/lib/account.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderaccount.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderaccount.php on line 2: no @package tag was used in a DocBlock for class RenderAccount
+WARNING in renderaccount.php on line 72: File "/home/andre/src/Wicked-outer-World/source/lib/renderaccount.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderskirmishopponents.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderskirmishopponents.php on line 2: no @package tag was used in a DocBlock for class RenderSkirmishOpponents
+WARNING in renderskirmishopponents.php on line 103: File "/home/andre/src/Wicked-outer-World/source/lib/renderskirmishopponents.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderranking.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderranking.php on line 2: no @package tag was used in a DocBlock for class RenderRanking
+WARNING in renderranking.php on line 156: File "/home/andre/src/Wicked-outer-World/source/lib/renderranking.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderacademyentrance.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderacademyentrance.php on line 2: no @package tag was used in a DocBlock for class RenderAcademyEntrance
+WARNING in renderacademyentrance.php on line 11: File "/home/andre/src/Wicked-outer-World/source/lib/renderacademyentrance.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/database.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in database.php on line 2: no @package tag was used in a DocBlock for class database
+WARNING in database.php on line 129: File "/home/andre/src/Wicked-outer-World/source/lib/database.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionacademytraining.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionacademytraining.php on line 2: no @package tag was used in a DocBlock for class ActionAcademyTraining
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in actionacademytraining.php on line 140: File "/home/andre/src/Wicked-outer-World/source/lib/actionacademytraining.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/javascript.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in javascript.php on line 4: no @package tag was used in a DocBlock for class JavaScript
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in javascript.php on line 34: File "/home/andre/src/Wicked-outer-World/source/lib/javascript.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/techcontainersubclass.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techcontainersubclass.php on line 5: no @package tag was used in a DocBlock for class techContainerSubclass
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techcontainersubclass.php on line 24: File "/home/andre/src/Wicked-outer-World/source/lib/techcontainersubclass.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/plugins.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in plugins.php on line 2: no @package tag was used in a DocBlock for class Plugins
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in plugins.php on line 138: File "/home/andre/src/Wicked-outer-World/source/lib/plugins.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/game.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in game.php on line 5: no @package tag was used in a DocBlock for class Game
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in game.php on line 55: File "/home/andre/src/Wicked-outer-World/source/lib/game.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderlogout.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderlogout.php on line 2: no @package tag was used in a DocBlock for class RenderLogout
+WARNING in renderlogout.php on line 40: File "/home/andre/src/Wicked-outer-World/source/lib/renderlogout.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckairlock.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckairlock.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckAirlock
+WARNING in rendertradedeckairlock.php on line 71: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckairlock.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/dataobjectprovider.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in dataobjectprovider.php on line 5: no @package tag was used in a DocBlock for class dataObjectProvider
+WARNING in dataobjectprovider.php on line 77: File "/home/andre/src/Wicked-outer-World/source/lib/dataobjectprovider.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in config.php on line 4: no @package tag was used in a DocBlock for class Config
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in config.php on line 80: File "/home/andre/src/Wicked-outer-World/source/lib/config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/vector.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in vector.php on line 2: no @package tag was used in a DocBlock for class Vector
+WARNING in vector.php on line 138: File "/home/andre/src/Wicked-outer-World/source/lib/vector.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererquartersentrance.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererquartersentrance.php on line 2: no @package tag was used in a DocBlock for class RendererQuartersEntrance
+WARNING in rendererquartersentrance.php on line 11: File "/home/andre/src/Wicked-outer-World/source/lib/rendererquartersentrance.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderskirmishfight.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderskirmishfight.php on line 2: no @package tag was used in a DocBlock for class RenderSkirmishFight
+WARNING in renderskirmishfight.php on line 116: File "/home/andre/src/Wicked-outer-World/source/lib/renderskirmishfight.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/techgroup.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techgroup.php on line 5: no @package tag was used in a DocBlock for class techGroup
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techgroup.php on line 441: File "/home/andre/src/Wicked-outer-World/source/lib/techgroup.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/message.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in message.php on line 2: no @package tag was used in a DocBlock for class Message
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in message.php on line 44: File "/home/andre/src/Wicked-outer-World/source/lib/message.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/techselector.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techselector.php on line 5: no @package tag was used in a DocBlock for class techSelector
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techselector.php on line 136: File "/home/andre/src/Wicked-outer-World/source/lib/techselector.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemoduleinterface.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemoduleinterface.php on line 2: no @package tag was used in a DocBlock for interface StarbaseModuleInterface
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in starbasemoduleinterface.php on line 14: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemoduleinterface.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendermessagemarkseen.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendermessagemarkseen.php on line 2: no @package tag was used in a DocBlock for class RenderMessageMarkSeen
+WARNING in rendermessagemarkseen.php on line 36: File "/home/andre/src/Wicked-outer-World/source/lib/rendermessagemarkseen.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererquartersabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererquartersabstract.php on line 2: no @package tag was used in a DocBlock for class RendererQuartersAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in rendererquartersabstract.php on line 23: File "/home/andre/src/Wicked-outer-World/source/lib/rendererquartersabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderacademyabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderacademyabstract.php on line 2: no @package tag was used in a DocBlock for class RenderAcademyAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in renderacademyabstract.php on line 23: File "/home/andre/src/Wicked-outer-World/source/lib/renderacademyabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderstarships.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderstarships.php on line 2: no @package tag was used in a DocBlock for class RenderStarships
+WARNING in renderstarships.php on line 9: File "/home/andre/src/Wicked-outer-World/source/lib/renderstarships.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerprofile.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerprofile.php on line 2: no @package tag was used in a DocBlock for class ControllerProfile
+WARNING in controllerprofile.php on line 17: File "/home/andre/src/Wicked-outer-World/source/lib/controllerprofile.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfactoryfiddle.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfactoryfiddle.php on line 2: no @package tag was used in a DocBlock for class RenderFactoryFiddle
+WARNING in renderfactoryfiddle.php on line 117: File "/home/andre/src/Wicked-outer-World/source/lib/renderfactoryfiddle.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendermessageabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendermessageabstract.php on line 2: no @package tag was used in a DocBlock for class RenderMessageAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in rendermessageabstract.php on line 21: File "/home/andre/src/Wicked-outer-World/source/lib/rendermessageabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfightdata.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfightdata.php on line 2: no @package tag was used in a DocBlock for class RenderFightData
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in renderfightdata.php on line 283: File "/home/andre/src/Wicked-outer-World/source/lib/renderfightdata.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderairlock.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderairlock.php on line 2: no @package tag was used in a DocBlock for class RenderAirlock
+WARNING in renderairlock.php on line 6: File "/home/andre/src/Wicked-outer-World/source/lib/renderairlock.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendermessageoverview.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendermessageoverview.php on line 2: no @package tag was used in a DocBlock for class RenderMessageOverview
+WARNING in rendermessageoverview.php on line 113: File "/home/andre/src/Wicked-outer-World/source/lib/rendermessageoverview.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionacademycourse.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionacademycourse.php on line 2: no @package tag was used in a DocBlock for class ActionAcademyCourse
+WARNING in actionacademycourse.php on line 127: File "/home/andre/src/Wicked-outer-World/source/lib/actionacademycourse.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderjumpgate.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderjumpgate.php on line 2: no @package tag was used in a DocBlock for class RenderJumpGate
+WARNING in renderjumpgate.php on line 28: File "/home/andre/src/Wicked-outer-World/source/lib/renderjumpgate.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controlleracademy.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controlleracademy.php on line 2: no @package tag was used in a DocBlock for class ControllerAcademy
+WARNING in controlleracademy.php on line 30: File "/home/andre/src/Wicked-outer-World/source/lib/controlleracademy.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbase.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbase.php on line 15: no @package tag was used in a DocBlock for class Starbase
+WARNING in starbase.php on line 67: File "/home/andre/src/Wicked-outer-World/source/lib/starbase.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starship.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starship.php on line 6: no @package tag was used in a DocBlock for class Starship
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in starship.php on line 214: File "/home/andre/src/Wicked-outer-World/source/lib/starship.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfactoryabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfactoryabstract.php on line 2: no @package tag was used in a DocBlock for class RenderFactoryAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in renderfactoryabstract.php on line 24: File "/home/andre/src/Wicked-outer-World/source/lib/renderfactoryabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/cachekey.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in cachekey.php on line 5: no @package tag was used in a DocBlock for class cacheKey
+WARNING in cachekey.php on line 23: File "/home/andre/src/Wicked-outer-World/source/lib/cachekey.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/bars.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in bars.php on line 2: no @package tag was used in a DocBlock for class Bars
+WARNING in bars.php on line 117: File "/home/andre/src/Wicked-outer-World/source/lib/bars.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderprofile.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderprofile.php on line 2: no @package tag was used in a DocBlock for class RenderProfile
+WARNING in renderprofile.php on line 198: File "/home/andre/src/Wicked-outer-World/source/lib/renderprofile.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerbank.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerbank.php on line 2: no @package tag was used in a DocBlock for class ControllerBank
+WARNING in controllerbank.php on line 17: File "/home/andre/src/Wicked-outer-World/source/lib/controllerbank.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/trashcontainer.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in trashcontainer.php on line 5: no @package tag was used in a DocBlock for class trashContainer
+WARNING in trashcontainer.php on line 56: File "/home/andre/src/Wicked-outer-World/source/lib/trashcontainer.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/crafting.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in crafting.php on line 2: no @package tag was used in a DocBlock for class crafting
+WARNING in crafting.php on line 81: File "/home/andre/src/Wicked-outer-World/source/lib/crafting.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderpiratenews.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderpiratenews.php on line 2: no @package tag was used in a DocBlock for class RenderPirateNews
+WARNING in renderpiratenews.php on line 40: File "/home/andre/src/Wicked-outer-World/source/lib/renderpiratenews.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererinterface.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererinterface.php on line 2: no @package tag was used in a DocBlock for interface RendererInterface
+WARNING in rendererinterface.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/rendererinterface.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/math.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in math.php on line 2: no @package tag was used in a DocBlock for class math
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in math.php on line 31: File "/home/andre/src/Wicked-outer-World/source/lib/math.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerimprint.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerimprint.php on line 2: no @package tag was used in a DocBlock for class ControllerImprint
+WARNING in controllerimprint.php on line 12: File "/home/andre/src/Wicked-outer-World/source/lib/controllerimprint.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionhangarmission.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionhangarmission.php on line 5: no @package tag was used in a DocBlock for class ActionHangarMission
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in actionhangarmission.php on line 128: File "/home/andre/src/Wicked-outer-World/source/lib/actionhangarmission.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerquarters.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerquarters.php on line 2: no @package tag was used in a DocBlock for class ControllerQuarters
+WARNING in controllerquarters.php on line 23: File "/home/andre/src/Wicked-outer-World/source/lib/controllerquarters.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemodulebank.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemodulebank.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleBank
+WARNING in starbasemodulebank.php on line 19: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemodulebank.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllertechinfo.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllertechinfo.php on line 2: no @package tag was used in a DocBlock for class ControllerTechInfo
+WARNING in controllertechinfo.php on line 13: File "/home/andre/src/Wicked-outer-World/source/lib/controllertechinfo.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionfight.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionfight.php on line 2: no @package tag was used in a DocBlock for class ActionFight
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in actionfight.php on line 183: File "/home/andre/src/Wicked-outer-World/source/lib/actionfight.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerinterface.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerinterface.php on line 2: no @package tag was used in a DocBlock for interface ControllerInterface
+WARNING in controllerinterface.php on line 8: File "/home/andre/src/Wicked-outer-World/source/lib/controllerinterface.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/accuracy.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in accuracy.php on line 2: no @package tag was used in a DocBlock for class Accuracy
+WARNING in accuracy.php on line 141: File "/home/andre/src/Wicked-outer-World/source/lib/accuracy.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderhangarstartrip.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderhangarstartrip.php on line 5: no @package tag was used in a DocBlock for class RenderHangarStarTrip
+WARNING in renderhangarstartrip.php on line 75: File "/home/andre/src/Wicked-outer-World/source/lib/renderhangarstartrip.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendertradedeckabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendertradedeckabstract.php on line 2: no @package tag was used in a DocBlock for class RenderTradeDeckAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in rendertradedeckabstract.php on line 25: File "/home/andre/src/Wicked-outer-World/source/lib/rendertradedeckabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/rendererabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in rendererabstract.php on line 7: no @package tag was used in a DocBlock for class RendererAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in rendererabstract.php on line 57: File "/home/andre/src/Wicked-outer-World/source/lib/rendererabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actionfightplunder.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actionfightplunder.php on line 2: no @package tag was used in a DocBlock for class ActionFightPlunder
+WARNING in actionfightplunder.php on line 21: File "/home/andre/src/Wicked-outer-World/source/lib/actionfightplunder.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderbank.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderbank.php on line 2: no @package tag was used in a DocBlock for class RenderBank
+WARNING in renderbank.php on line 108: File "/home/andre/src/Wicked-outer-World/source/lib/renderbank.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/account.php~ -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerjumpgate.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerjumpgate.php on line 2: no @package tag was used in a DocBlock for class ControllerJumpGate
+WARNING in controllerjumpgate.php on line 10: File "/home/andre/src/Wicked-outer-World/source/lib/controllerjumpgate.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controlleraccount.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controlleraccount.php on line 2: no @package tag was used in a DocBlock for class ControllerAccount
+WARNING in controlleraccount.php on line 16: File "/home/andre/src/Wicked-outer-World/source/lib/controlleraccount.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderfactorydisassemble.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderfactorydisassemble.php on line 2: no @package tag was used in a DocBlock for class RenderFactoryDisassemble
+WARNING in renderfactorydisassemble.php on line 14: File "/home/andre/src/Wicked-outer-World/source/lib/renderfactorydisassemble.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderstatus.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderstatus.php on line 5: no @package tag was used in a DocBlock for class RenderStatus
+WARNING in renderstatus.php on line 68: File "/home/andre/src/Wicked-outer-World/source/lib/renderstatus.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/starbasemodulejumpgate.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in starbasemodulejumpgate.php on line 5: no @package tag was used in a DocBlock for class StarbaseModuleJumpGate
+WARNING in starbasemodulejumpgate.php on line 24: File "/home/andre/src/Wicked-outer-World/source/lib/starbasemodulejumpgate.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/technology.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in technology.php on line 5: no @package tag was used in a DocBlock for class Technology
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in technology.php on line 891: File "/home/andre/src/Wicked-outer-World/source/lib/technology.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerskirmish.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerskirmish.php on line 2: no @package tag was used in a DocBlock for class ControllerSkirmish
+WARNING in controllerskirmish.php on line 26: File "/home/andre/src/Wicked-outer-World/source/lib/controllerskirmish.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/controllerabstract.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in controllerabstract.php on line 2: no @package tag was used in a DocBlock for class ControllerAbstract
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in controllerabstract.php on line 140: File "/home/andre/src/Wicked-outer-World/source/lib/controllerabstract.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/actioninterface.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in actioninterface.php on line 2: no @package tag was used in a DocBlock for interface ActionInterface
+WARNING in actioninterface.php on line 9: File "/home/andre/src/Wicked-outer-World/source/lib/actioninterface.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/stockage.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in stockage.php on line 5: no @package tag was used in a DocBlock for class stockage
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in stockage.php on line 90: File "/home/andre/src/Wicked-outer-World/source/lib/stockage.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/html.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in html.php on line 5: no @package tag was used in a DocBlock for class html
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in html.php on line 47: File "/home/andre/src/Wicked-outer-World/source/lib/html.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderregister.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderregister.php on line 2: no @package tag was used in a DocBlock for class RenderRegister
+WARNING in renderregister.php on line 195: File "/home/andre/src/Wicked-outer-World/source/lib/renderregister.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/craft.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in craft.php on line 5: no @package tag was used in a DocBlock for class craft
+WARNING in craft.php on line 12: File "/home/andre/src/Wicked-outer-World/source/lib/craft.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/condition.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in condition.php on line 5: no @package tag was used in a DocBlock for class Condition
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in condition.php on line 303: File "/home/andre/src/Wicked-outer-World/source/lib/condition.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/lib/renderentities.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in renderentities.php on line 2: no @package tag was used in a DocBlock for class RenderEntities
+WARNING in renderentities.php on line 22: File "/home/andre/src/Wicked-outer-World/source/lib/renderentities.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/i18n.php~ -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/source/configs/tech_config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in tech_config.php on line 37: File "/home/andre/src/Wicked-outer-World/source/configs/tech_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/configs/base_config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in base_config.php on line 2: File "/home/andre/src/Wicked-outer-World/source/configs/base_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/configs/mission_config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in mission_config.php on line 93: File "/home/andre/src/Wicked-outer-World/source/configs/mission_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/configs/space_config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in space_config.php on line 35: File "/home/andre/src/Wicked-outer-World/source/configs/space_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/configs/generateTechConfig.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in generateTechConfig.php on line 782: File "/home/andre/src/Wicked-outer-World/source/configs/generateTechConfig.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/configs/route_config.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in route_config.php on line 80: File "/home/andre/src/Wicked-outer-World/source/configs/route_config.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/source/jquery-ui.css -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/source/i18n.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in i18n.php on line 1725: File "/home/andre/src/Wicked-outer-World/source/i18n.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/index.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in index.php on line 13: no @package tag was used in a DocBlock for class dispatcher
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in index.php on line 430: File "/home/andre/src/Wicked-outer-World/index.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/bootstrap.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in bootstrap.php on line 18: File "/home/andre/src/Wicked-outer-World/bootstrap.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/phpunit.xml -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/docs/media/banner.css -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/docs/media/stylesheet.css -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/docs/errors-while-creating.txt -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/testboot.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in testboot.php on line 12: no @package tag was used in a DocBlock for class phpUnitFramework
+WARNING in testboot.php on line 27: File "/home/andre/src/Wicked-outer-World/testboot.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/tests/AccuracyTest.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in AccuracyTest.php on line 2: no @package tag was used in a DocBlock for class AccuracyTest
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in AccuracyTest.php on line 35: Unknown tag "@dataProvider" used
+WARNING in AccuracyTest.php on line 89: File "/home/andre/src/Wicked-outer-World/tests/AccuracyTest.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/tests/ActionAcademyTrainingTest.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in ActionAcademyTrainingTest.php on line 2: no @package tag was used in a DocBlock for class ActionAcademyTrainingTest
+WARNING in ActionAcademyTrainingTest.php on line 19: File "/home/andre/src/Wicked-outer-World/tests/ActionAcademyTrainingTest.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/tests/fiddleTest.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in fiddleTest.php on line 2: no @package tag was used in a DocBlock for class fiddleTest
+WARNING in fiddleTest.php on line 55: File "/home/andre/src/Wicked-outer-World/tests/fiddleTest.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/tests/techGroupTest.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in techGroupTest.php on line 2: no @package tag was used in a DocBlock for class techGroupTest
+
+Strict Standards: Non-static method phpDocumentor_setup::checkIgnoreTag() should not be called statically, assuming $this from incompatible context in /usr/share/php/PhpDocumentor/phpDocumentor/ParserDocBlock.inc on line 613
+WARNING in techGroupTest.php on line 6: Unknown tag "@dataProvider" used
+WARNING in techGroupTest.php on line 64: File "/home/andre/src/Wicked-outer-World/tests/techGroupTest.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+Reading file /home/andre/src/Wicked-outer-World/wow/src/default.js -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/src/page.scss -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/src/page.css -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/snd/plug.wav -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/framework.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/space_item.png#.PNG -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/ghost_mode.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/battle_v0.3.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/designer_v0.1.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/battle_v0.2.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/fiddling.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/equip.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/collect.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/battle_v0.1.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/screenshots/technology_v0.1.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/stardust_slow.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/progress.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/asteroid.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/slider_bg.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/white_flare.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/outer_ring.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/slider.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/default_fighter.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/menu_tab_bg.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/suk_logo.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/menu_title.jpg -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/hseperator.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/flags.jpg -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/inner_ring.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/tmp_char.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/stardust_fast.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/starfield_background.jpg -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/gof_temp_menu.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/vseperator.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/navi_icons.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/bars.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/favicon.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/menu_content.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/space_earth.jpg -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/item.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/buttons.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/wow/img/big_bars.png -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/index.html -- File not parsed, not a php file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+Reading file /home/andre/src/Wicked-outer-World/phpunit.php -- Parsing file
+
+Strict Standards: Only variables should be passed by reference in /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php on line 752
+WARNING in phpunit.php on line 5: no @package tag was used in a DocBlock for class phpunitExecuter
+WARNING in phpunit.php on line 72: File "/home/andre/src/Wicked-outer-World/phpunit.php" has no page-level DocBlock, use @package in the first DocBlock to create one
+done
+
+Converting From Abstract Parsed Data
+
+Processing Class Inheritance
+
+
+Processing Root Trees
+
+
+Processing leftover classes (classes that extend root classes not found in the same package)
+Processing MessagesSent in file /home/andre/src/Wicked-outer-World/source/lib/messagessent.php
+WARNING: Class MessagesSent parent Lisbeth_Collection not found
+Processing MessagesReceived in file /home/andre/src/Wicked-outer-World/source/lib/messagesreceived.php
+WARNING: Class MessagesReceived parent Lisbeth_Collection not found
+Processing Account in file /home/andre/src/Wicked-outer-World/source/lib/account.php
+WARNING: Class Account parent Lisbeth_Entity not found
+Processing Message in file /home/andre/src/Wicked-outer-World/source/lib/message.php
+WARNING: Class Message parent Lisbeth_Entity not found
+Processing Starship in file /home/andre/src/Wicked-outer-World/source/lib/starship.php
+WARNING: Class Starship parent TechContainerAbstract not found
+Processing trashContainer in file /home/andre/src/Wicked-outer-World/source/lib/trashcontainer.php
+WARNING: Class trashContainer parent TechContainerAbstract not found
+Processing crafting in file /home/andre/src/Wicked-outer-World/source/lib/crafting.php
+WARNING: Class crafting parent Lisbeth_Entity not found
+Processing stockage in file /home/andre/src/Wicked-outer-World/source/lib/stockage.php
+WARNING: Class stockage parent TechContainerAbstract not found
+Processing phpUnitFramework in file /home/andre/src/Wicked-outer-World/testboot.php
+WARNING: Class phpUnitFramework parent PHPUnit_Framework_TestCase not found
+done processing leftover classes
+
+Processing Procedural Page Element Name Conflicts
+
+
+Sorting page elements...done
+Formatting @uses list...done
+
+creating docs/media
+copying docs/media/banner.css
+copying docs/media/stylesheet.css
+Building indexes...done
+
+Sorting Indexes...done
+
+Sorting @todo list...done
+Converting tutorials/extended docs
+Formatting Package Indexes...
+Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /usr/share/php/PhpDocumentor/phpDocumentor/Converter.inc on line 5064
+
+Fatal error: Uncaught exception 'SmartyException' with message 'Call of unknown method 'register_outputfilter'.' in /usr/share/php/smarty/sysplugins/smarty_internal_templatebase.php:806
+Stack trace:
+#0 /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc(608): Smarty_Internal_TemplateBase->__call('register_output...', Array)
+#1 /usr/share/php/PhpDocumentor/phpDocumentor/Converters/HTML/frames/HTMLframesConverter.inc(608): Smarty->register_outputfilter('HTMLframes_outp...')
+#2 /usr/share/php/PhpDocumentor/phpDocumentor/Converter.inc(1843): HTMLframesConverter->formatPkgIndex()
+#3 /usr/share/php/PhpDocumentor/phpDocumentor/IntermediateParser.inc(1652): Converter->walk(Array, Array)
+#4 /usr/share/php/PhpDocumentor/phpDocumentor/IntermediateParser.inc(1865): phpDocumentor_IntermediateParser->Convert('Generated Docum...', Object(HTMLframesConverter))
+#5 /usr/share/php/PhpDocumentor/phpDocumentor/Setup.inc.php(761): phpDocumentor_IntermediateParser->Output()
+#6 /usr/share/php/PhpDocumentor/p in /usr/share/php/smarty/sysplugins/smarty_internal_templatebase.php on line 806
