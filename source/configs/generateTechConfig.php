@@ -1,7 +1,9 @@
 <?php
 
 require_once '../../ext/lisbeth/lisbeth/distributor.php';
+require_once '../../ext/lisbeth/lisbeth/ientity.php';
 require_once '../../ext/lisbeth/lisbeth/entity.php';
+require_once '../../ext/lisbeth/lisbeth/entity/accounts.php';
 require_once '../lib/account.php';
 require_once '../lib/accountsubclass.php';
 require_once '../lib/technology.php';
@@ -31,15 +33,41 @@ require_once '../lib/technology.php';
 // Ragnarok Mk I; reactor (-5), plating (-3), junk (-8)... (7 left)
 // Ragnarok Mk I; reactor (-5), plating (-2), junk (-8), cargo (-16)... (0 left)
 
-// Buy a ship automatically sells the old ship and unequips everything.
 // Level up clan base by putting money in.
 // Creating a clan only possible at a certain minimum level.
 // Levels give skill points.
+
+/*
+	Starship: Weight - Level
+	25	0
+	30	2
+	35	4
+	40	6
+	45	8
+	50	10
+	55	12
+	60	14
+	65	16
+	70	18
+	75	20
+	80	22
+	85	24
+	90	26
+	95	28
+	100	30
+*/
+
 
 $techIds = array(
 	'GREMLIN_ID'				=> 3,
 	'NIGHTFALL_CB55_ID'			=> 4,
 	'RELENTLESS_ID'				=> 5,
+	'EDINBURG_V5_ID'			=> 6,
+	'REVENANT_ID'				=> 7,
+	'IGNIS_ID'					=> 8,
+
+	'IMPACT_PLATING_ID'			=> 40,
+	'DEFLECTOR_PLATING_ID'		=> 41,
 
 	'SMALL_BLASTER_ID'			=> 60,
 
@@ -53,6 +81,7 @@ $techIds = array(
 
 	'BLASTER_AMMUNITION_ID'		=> 70,
 	'SHARK_TORPEDOES_ID'		=> 71,
+	'RAILGUN_AMMUNITION_ID'		=> 72,
 
 	'NUCLEAR_BATTERIES_ID'		=> 80,
 	'SOLAR_ARRAY_ID'			=> 81,
@@ -68,6 +97,10 @@ $techIds = array(
 
 	'SHARK_2_ID'				=> 140,
 	'SHARK_5_ID'				=> 141,
+
+	'MICRO_LASER_ID'			=> 150,
+
+	'STINGER_RAILGUN_ID'		=> 160,
 
 	'IRON_ID'					=> 1000,
 	'MAGNET_COIL_ID'			=> 1005,
@@ -89,7 +122,10 @@ $techIds = array(
 	'EXPLOSIVES_ID'				=> 1230,
 
 	'TECHNICAL_COMPONENTS_ID'	=> 1250,
-	'COOLER_ID'					=> 1275
+	'COOLER_ID'					=> 1275,
+
+	'FOOD_ID'					=> 1300,
+	'WATCH_ID'					=> 1301
 );
 
 foreach ($techIds as $name => $techId) {
@@ -128,6 +164,7 @@ $technology[-1] = array(
 $technology[GREMLIN_ID] = array(
 	'type'		=> Technology::TYPE_STARSHIP,
 	'name'		=> 'Gremlin',
+	'level'		=> 0,
 	'price'		=> 9587,
 	'weight'	=> 25,
 	'tonnage'	=> 19,
@@ -144,6 +181,7 @@ $technology[GREMLIN_ID] = array(
 $technology[2] = array(
 	'type'		=> Technology::TYPE_STARSHIP,
 	'name'		=> 'GenesisSC4',
+	'level'		=> 0,
 	'price'		=> 8200,
 	'weight'	=> 30,
 	'tonnage'	=> 21,
@@ -160,6 +198,7 @@ $technology[2] = array(
 $technology[1] = array(
 	'type'		=> Technology::TYPE_STARSHIP,
 	'name'		=> 'RagnarokMkI',
+	'level'		=> 0,
 	'price'		=> 10800,
 	'weight'	=> 30,
 	'tonnage'	=> 18,
@@ -175,6 +214,7 @@ $technology[1] = array(
 $technology[NIGHTFALL_CB55_ID] = array(
 	'type'		=> Technology::TYPE_STARSHIP,
 	'name'		=> 'NightfallCb55',
+	'level'		=> 2,
 	'price'		=> 13492,
 	'weight'	=> 35,
 	'tonnage'	=> 24,
@@ -190,6 +230,7 @@ $technology[NIGHTFALL_CB55_ID] = array(
 $technology[RELENTLESS_ID] = array(
 	'type'		=> Technology::TYPE_STARSHIP,
 	'name'		=> 'Relentless',
+	'level'		=> 2,
 	'price'		=> 14732,
 	'weight'	=> 35,
 	'tonnage'	=> 21,
@@ -202,6 +243,54 @@ $technology[RELENTLESS_ID] = array(
 		'engine'		=> 3
 	)
 );
+$technology[EDINBURG_V5_ID] = array(
+	'type'		=> Technology::TYPE_STARSHIP,
+	'name'		=> 'EdinburgV5',
+	'level'		=> 5,
+	'price'		=> 17520,
+	'weight'	=> 40,
+	'tonnage'	=> 27,
+	'structure'	=> 124,
+	'slots'		=> array(
+		'weaponry'		=> 2,
+		'ammunition'	=> 1,
+		'equipment'		=> 2,
+		'cargo'			=> 2,
+		'engine'		=> 3
+	)
+);
+$technology[REVENANT_ID] = array(
+	'type'		=> Technology::TYPE_STARSHIP,
+	'name'		=> 'Revenant',
+	'level'		=> 6,
+	'price'		=> 19600,
+	'weight'	=> 40,
+	'tonnage'	=> 29,
+	'structure'	=> 141,
+	'slots'		=> array(
+		'weaponry'		=> 2,
+		'ammunition'	=> 1,
+		'equipment'		=> 1,
+		'cargo'			=> 2,
+		'engine'		=> 3
+	)
+);
+$technology[IGNIS_ID] = array(
+	'type'		=> Technology::TYPE_STARSHIP,
+	'name'		=> 'Ignis',
+	'level'		=> 8,
+	'price'		=> 24995,
+	'weight'	=> 45,
+	'tonnage'	=> 33,
+	'structure'	=> 167,
+	'slots'		=> array(
+		'weaponry'		=> 2,
+		'ammunition'	=> 1,
+		'equipment'		=> 3,
+		'cargo'			=> 2,
+		'engine'		=> 3
+	)
+);
 
 $technology[30] = array(
 	'type'		=> Technology::TYPE_MINING_MODULE,
@@ -210,7 +299,7 @@ $technology[30] = array(
 );
 
 // ballistic, explosion and energy armor
-$technology[40] = array(
+$technology[IMPACT_PLATING_ID] = array(
 	'type'		=> Technology::TYPE_PLATING,
 	'name'		=> 'ImpactArmor',
 	'weight'	=> 1,
@@ -221,6 +310,20 @@ $technology[40] = array(
 		IRON_ID	=> 4
 	),
 	'craftHint'	=> true
+);
+$technology[DEFLECTOR_PLATING_ID] = array(
+	'type'		=> Technology::TYPE_PLATING,
+	'name'		=> 'DeflectorPlating',
+	'level'		=> 4,
+	'weight'	=> 2,
+	'stack'		=> 1,
+	'armor'		=> 27,
+	'price'		=> null,	// Value for trading.
+	'craft' => array(
+		IMPACT_PLATING_ID	=> 1,
+		CRYSTALS_ID			=> 2,
+		ENERGY_CELLS_ID		=> 2
+	)
 );
 
 /*
@@ -295,6 +398,43 @@ $technology[SHARK_5_ID] = array(
 		COOLER_ID				=> 1
 	),
 	'craftHint' => true
+);
+$technology[STINGER_RAILGUN_ID] = array(
+	'type'			=> Technology::TYPE_WEAPON,
+	'name'			=> 'StingerRailgun',
+	'level'			=> 10,
+	'weight'		=> 3,
+	'damage'		=> 43,
+	'reload'		=> 1,
+	'drain'			=> 12,
+	'damageType'	=> Technology::DAMAGE_KINETIC,
+	'ammo'			=> RAILGUN_AMMUNITION_ID,
+	'price'			=> null,	// Value for trading.
+	'craft' => array(
+		TECHNICAL_COMPONENTS_ID	=> 1,
+		MAGNET_COIL_ID			=> 4,
+		ENERGY_CELLS_ID			=> 4,
+		COOLER_ID				=> 1
+	),
+	'craftHint'	=> true
+);
+$technology[MICRO_LASER_ID] = array(
+	'type'			=> Technology::TYPE_WEAPON,
+	'name'			=> 'MicroLaser',
+	'level'			=> 5,
+	'weight'		=> 2,
+	'damage'		=> 8,
+	'reload'		=> 2,
+	'drain'			=> 9,
+	'burst'			=> 5,
+	'damageType'	=> Technology::DAMAGE_ENERGY,
+	'price'			=> null,	// Value for trading.
+	'craft' => array(
+		IRON_ID			=> 2,
+		CRYSTALS_ID		=> 4,
+		COOLER_ID		=> 4
+	),
+	'craftHint'	=> true
 );
 $technology[LIGHT_LASER_ID] = array(
 	'type'			=> Technology::TYPE_WEAPON,
@@ -408,6 +548,19 @@ $technology[SHARK_TORPEDOES_ID] = array(
 		ELECTRONICS_ID	=> 1,
 		EXPLOSIVES_ID	=> 1,
 		NOBLE_GAS_ID	=> 1
+	),
+	'craftHint'	=> true
+);
+
+$technology[RAILGUN_AMMUNITION_ID] = array(
+	'type'		=> Technology::TYPE_AMMUNITION,
+	'name'		=> 'RailgunAmmunition',
+	'weight'	=> 1,
+	'stack'		=> 100,
+	'price'		=> null,	// Value for trading.
+	'craft'		=> array(
+		IRON_ID			=> 2,
+		ENERGY_CELLS_ID	=> 1
 	),
 	'craftHint'	=> true
 );
@@ -723,6 +876,20 @@ $technology[COOLER_ID] = array(
 	),
 	'craftHint'	=> true
 );
+$technology[FOOD_ID] = array(
+	'type'		=> Technology::TYPE_INGREDIENT,
+	'name'		=> 'Food',
+	'weight'	=> 1,
+	'stack'		=> 1,
+	'price'		=> 25	// Value for trading.
+);
+$technology[WATCH_ID] = array(
+	'type'		=> Technology::TYPE_INGREDIENT,
+	'name'		=> 'Watch',
+	'weight'	=> 1,
+	'stack'		=> 1,
+	'price'		=> 85	// Value for trading.
+);
 
 
 $basicPrices = array();
@@ -780,4 +947,4 @@ $output[] = "\$technology = unserialize('{$serialized}');";
 
 $output = implode("\n", $output);
 
-file_put_contents('tech_config.php', $output);
+file_put_contents('tech.php', $output);

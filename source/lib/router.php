@@ -12,30 +12,6 @@ class Router {
 	 */
 	private $routes;
 
-	public function __construct() {
-		$this->routes = array(
-			'home' => array(
-				'dbConnect'	=> true,
-				'response'	=> self::RESPONSE_ONLINE
-			),
-			'test' => array(
-				// Include everything for dev.
-				'dbConnect'	=> true,
-				'response'	=> self::RESPONSE_ONLINE
-			),
-			'entities' => array(
-				// Return entites as json.
-				'dbConnect'	=> true,
-				'response'	=> self::RESPONSE_AJAX
-			),
-			'techInfo' => array(
-				// Return tech description html.
-				'dbConnect'	=> false,
-				'response'	=> self::RESPONSE_AJAX
-			)
-		);
-	}
-
 	/**
 	 * @return string
 	 */
@@ -55,7 +31,7 @@ class Router {
 	}
 
 	/**
-	 * @return ControllerAbstract
+	 * @return Controller_Abstract
 	 */
 	public function controller() {
 		$route = $this->route();
@@ -70,7 +46,7 @@ class Router {
 		$database = $this->hasOption($route, 'database');
 		$ajax = $this->hasOption($route, 'ajax');
 
-		/** @var $controller ControllerAbstract */
+		/** @var $controller Controller_Abstract */
 		$controller = $route['controller'];
 		$controller = new $controller();
 		$controller

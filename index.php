@@ -85,13 +85,13 @@ class dispatcher {
 	private function updateLanguage(Account $account) {
 		$session = new Leviathan_Session();
 
-		$languageAccount = $account->value('language');
+		$languageAccount = $account->get('language');
 		$languageRequest = Leviathan_Request::getInstance()->both('lang');
 		$languageSession = $session->value('language');
 		if ($languageRequest) {
 			// Language has already been validated.
 			$account
-				->setValue('language', $languageSession)
+				->set('language', $languageSession)
 				->update();
 		}
 		elseif ($languageSession !== $languageAccount) {
@@ -236,7 +236,9 @@ class dispatcher {
 		}
 
 		if ($content->renderBox()) {
-			$contentBody = Format::box($content->regionHead(), $contentBody);
+			$contentHead = $content->regionHead();
+			$contentHead = "{{'{$contentHead}'|i18n}}";
+			$contentBody = Format::box($contentHead, $contentBody);
 		}
 
 		$leaveFeedback = i18n('leaveFeedback');
@@ -274,7 +276,7 @@ class dispatcher {
 						<div class='company'>
 							<a href='http://www.pad-soft.de' target='_blank'>
 								<span class='entypo-compass'></span>
-								PAD-Soft Game Development
+								PadSoft Game Development by Artimus
 							</a>
 						</div>
 						<div class='moreGames'>
@@ -293,8 +295,23 @@ class dispatcher {
 			$javaScript->bind("$('.moreGames').moreGames();");
 		}
 
+		$ga = false ? "
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41010022-1', 'wicked-outer-world.com');
+  ga('send', 'pageview');
+
+</script>" : '';
+
+		$language = $session->value('language');
+		$version = VERSION;
+
 		return "<!doctype html>
-<html lang='{$session->value('language')}'>
+<html lang='{$language}' ng-app='wowApp'>
 	<head>
 		<title>{$title}</title>
 		<meta http-equiv='content-type' content='text/html; charset=windows-1252'>
@@ -302,7 +319,7 @@ class dispatcher {
 		<link rel='icon' href='./wow/img/favicon.png'>
 
 		<link rel='stylesheet' type='text/css' href='./ext/tipTip/tipTip.css'>
-		<link rel='stylesheet' type='text/css' href='./wow/src/page.css?v=1.0'>
+		<link rel='stylesheet' type='text/css' href='./wow/src/page.css?v={$version}'>
 		<link rel='stylesheet' type='text/css' href='./wow/src/jquery-ui.css'>
 		<link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/trontastic/jquery-ui.css' type='text/css'>
 	</head>
@@ -331,14 +348,18 @@ class dispatcher {
 		<div id='footer'>
 			<div class='content'>
 				<a href='?page=imprint'>{$imprint}</a>
+				&#124;
+				<a href='?page=versionLog' class='highlight'>v{$version}</a>
 			</div>
 		</div>
 
+		<script type='text/javascript' src='./wow/src/i18n/{$language}.js?v={$version}'></script>
 		<script type='text/javascript' src='./ext/jQuery/jquery-1.8.0.min.js'></script>
 		<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js'></script>
+		<script type='text/javascript' src='./ext/angular/angular.min.js'></script>
 		<script type='text/javascript' src='./ext/tipTip/jquery.tipTip.minified.js'></script>
-		<script type='text/javascript' src='./ext/demetron/demetron.js'></script>
-		<script type='text/javascript' src='./wow/src/default.js?v=1.0'></script>
+		<script type='text/javascript' src='./ext/demetron/demetron.js?v={$version}'></script>
+		<script type='text/javascript' src='./wow/src/default.js?v={$version}'></script>
 		<script type='text/javascript'>{$javaScript->bindings()}</script>
 
 <script type='text/javascript'>
@@ -364,21 +385,14 @@ reformal_wdg_bimage = '8489db229aa0a66ab6b80ebbe0bb26cd.png';
 
 <script type='text/javascript' language='JavaScript' src='http://idea.informer.com/tab6.js?domain=wicked-outer-world'></script><noscript><a href='http://wicked-outer-world.idea.informer.com'>Wicked outer World feedback </a> <a href='http://idea.informer.com'><img src='http://widget.idea.informer.com/tmpl/images/widget_logo.jpg' /></a></noscript>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41010022-1', 'wicked-outer-world.com');
-  ga('send', 'pageview');
-
-</script>
+	{$ga}
 	</body>
 </html>";
 	}
 
 	/**
+	 * @TODO Send application json header.
+	 *
 	 * @param Content $content
 	 * @return string
 	 */
@@ -386,26 +400,19 @@ reformal_wdg_bimage = '8489db229aa0a66ab6b80ebbe0bb26cd.png';
 		return $content->regionBody();
 	}
 
-	/**
-	 * @TODO Move to connection class.
-	 */
 	private function dbConnect() {
-		define('HOST_FOR_MYSQL',		'localhost');
-		define('USER_FOR_MYSQL',		'wowalpha');
-		define('PASS_FOR_MYSQL',		'$Vietam1383');
-		define('DATABASE_FOR_MYSQL',	'wowalpha');
+		Lisbeth_KeyGenerator::setCacheSpace(DATABASE_FOR_MYSQL);
 
-		mysql_connect(HOST_FOR_MYSQL, USER_FOR_MYSQL, PASS_FOR_MYSQL) or die('no connection');
-		mysql_select_db(DATABASE_FOR_MYSQL) or die('no database');
+		$database = new Lisbeth_Database();
+		$database->connect(HOST_FOR_MYSQL, USER_FOR_MYSQL, PASS_FOR_MYSQL) or die('no connection');
+		$database->selectDatabase(DATABASE_FOR_MYSQL) or die('no database');
 
-		cache::connect('localhost', 11211);
+		Lisbeth_Memcache::getSingleton()->connect('localhost', 11211);
 	}
 
-	/**
-	 * @TODO Move to connection class.
-	 */
 	private function dbDisconnect() {
-		mysql_close();
+		$database = new Lisbeth_Database();
+		$database->close();
 	}
 }
 
@@ -419,11 +426,6 @@ session_start();
 //}
 
 require_once './bootstrap.php';
-
-require_once './source/i18n.php';
-require_once './source/configs/base_config.php';
-require_once './source/configs/tech_config.php';
-require_once './source/configs/space_config.php';
 
 JavaScript::create()->bind("$('.techInfo').techInfo();");
 

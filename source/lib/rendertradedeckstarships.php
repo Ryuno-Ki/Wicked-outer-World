@@ -24,20 +24,59 @@ class RenderTradeDeckStarships extends RenderTradeDeckAbstract {
 			return;
 		}
 
-		$price->buy();
+		$availableItems = $this->availableStarships();
+		if (!array_key_exists($techId, $availableItems)) {
+			return;
+		}
 
-		$account
-			->setValue('starshipId', $item->id())
-			->setValue('itemsWeaponry', '')
-			->setValue('itemsAmmunition', '')
-			->setValue('itemsEquipment', '')
-			->setValue('itemsCargo', '')
-			->setValue('itemsEngine', '')
-			->update();
+		$price->buy();
+		$account->update();
+
+		Starship::createEntity($account, $techId);
 
 		EventBox::get()->success(
 			i18n('shipBought')
 		);
+	}
+
+	/**
+	 * @return Technology[]
+	 */
+	protected function availableStarships() {
+		static $availableItems = array();
+
+		if (count($availableItems) > 0) {
+			return $availableItems;
+		}
+
+		$account = $this->account();
+		$tradeDeck = $account->starbase()->module(Starbase_Module_TradeDeck::KEY);
+
+		$config = Config::getInstance()->technology();
+		$config = array_keys($config->technology);
+		$configCount = count($config);
+
+		$time = TIME + 21600;
+		$seed = $account->id() + $account->sectorId() + round($time / 43200);
+		$staticRandom = new Leviathan_StaticRandom($seed);
+
+		while (count($availableItems) < 4) {
+			$key = $staticRandom->random(0, $configCount - 1);
+			$techId = $config[$key];
+
+			$item = Technology::raw($techId);
+			if (
+				!$item->isStarship() ||
+				$item->level() > $tradeDeck->level() ||
+				array_key_exists($techId, $availableItems)
+			) {
+				continue;
+			}
+
+			$availableItems[$techId] = $item;
+		}
+
+		return $availableItems;
 	}
 
 	/**
@@ -46,24 +85,13 @@ class RenderTradeDeckStarships extends RenderTradeDeckAbstract {
 	public function bodyHtml() {
 		$this->commit();
 
-		$headline = i18n('starships');
-		$attention = i18n('attention');
-		$notice = i18n('buyStarshipNotice');
-		$buttonText = i18n('buy');
-
 		$account = $this->account();
 		$price = $account->price();
 
+		$hasMaximumStarships = $account->starships()->hasMaximumAmount();
+
 		$html = '';
-
-		$config = Config::getInstance()->technology();
-		$config = array_keys($config->technology);
-		foreach ($config as $techId) {
-			$item = Technology::raw($techId);
-			if (!$item->isStarship()) {
-				continue;
-			}
-
+		foreach ($this->availableStarships() as $techId => $item) {
 			$title = '';
 			$class = 'button';
 			$shopPrice = $item->shopPrice();
@@ -71,10 +99,16 @@ class RenderTradeDeckStarships extends RenderTradeDeckAbstract {
 
 			$shopPrice = Format::money($shopPrice);
 
+			if ($hasMaximumStarships) {
+				$class .= ' disabled';
+			}
+
 			if (!$canAfford) {
-				$title = i18n('youArePoor');
-				$title = " title='{$title}'";
-				$class .= ' disabled tipTip';
+				if (!$hasMaximumStarships) {
+					$title = " title='{{\"youArePoor\"|i18n}}'";
+					$class .= ' disabled tipTip';
+				}
+
 				$shopPrice = "<span class='critical bold'>{$shopPrice}</span>";
 			}
 
@@ -86,11 +120,11 @@ class RenderTradeDeckStarships extends RenderTradeDeckAbstract {
 		{$shopPrice}
 	</td>
 	<td class='top'>
-		<form action='' method='post'>
+		<form action='{$_SERVER["REQUEST_URI"]}' method='post'>
 			<input type='button' class='techInfo button small' value='Info' data-techId='{$techId}'>
 
 			<input type='hidden' name='techId' value='{$techId}'>
-			<input type='submit' class='{$class}' value='{$buttonText}'{$title}>
+			<input type='submit' class='{$class}' value='{{\"buy\"|i18n}}'{$title}>
 		</form>
 	</td>
 </tr>";
@@ -98,10 +132,19 @@ class RenderTradeDeckStarships extends RenderTradeDeckAbstract {
 
 		$html = html::defaultTable($html);
 
+		if ($hasMaximumStarships) {
+			$html = "
+				<h2 class='warning'>{{'attention'|i18n}}</h2>
+				<p class='critical'>{{'buyStarshipNotice'|i18n}}</p>
+				{$html}";
+		}
+
 		return "
-			<h2>{$headline}</h2>
-			<h2 class='warning'>{$attention}</h2>
-			<p class='critical'>{$notice}</p>
+			<h2>{{'starships'|i18n}}</h2>
+			<p>
+				{{'starshipsDescription'|i18n}}<br>
+				{{'newShipNotice'|i18n}}
+			</p>
 			{$html}";
 	}
 }

@@ -1,3 +1,5 @@
 # Ignoring temporary files
 *.*~
 *.swp
+
+source/configs/base.php

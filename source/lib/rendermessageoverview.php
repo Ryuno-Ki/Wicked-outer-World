@@ -8,7 +8,7 @@ class RenderMessageOverview extends RenderMessageAbstract {
 		if ($message) {
 			$messagesReceived->removeEntity($messageId);
 			$messagesSent = new MessagesSent(
-				$message->value('senderId')
+				$message->get('senderId')
 			);
 			$messagesSent->removeEntity($messageId);
 			$message->delete();
@@ -31,25 +31,23 @@ class RenderMessageOverview extends RenderMessageAbstract {
 
 		$html = "
 			<tr>
-				<th colspan='2'>" . i18n('action') . "</th>
-				<th>" . i18n('sender') . "</th>
-				<th>" . i18n('subject') . "</th>
-				<th>" . i18n('stardate') . "</th>
+				<th colspan='2'>{{'action'|i18n}}</th>
+				<th>{{'sender'|i18n}}</th>
+				<th>{{'subject'|i18n}}</th>
+				<th>{{'stardate'|i18n}}</th>
 			</tr>";
 
-		$reply = i18n('reply');
-		$delete = i18n('delete');
 		$deleteMessage = i18n('deleteMessage');
 		$showHideMessage = i18n('showHideMessage');
 
 		$controller = $this->controller();
 
 		foreach ($messagesReceived->messages() as $message) {
-			$bold = $message->value('seen')
+			$bold = $message->get('seen')
 				? ''
 				: " class='bold'";
 
-			$created = date('Y-m-d H:i:s', $message->value('created'));
+			$created = date('Y-m-d H:i:s', $message->get('created'));
 
 			$messageId = $message->id();
 			$deleteUrl = $controller->currentSection(
@@ -64,9 +62,22 @@ class RenderMessageOverview extends RenderMessageAbstract {
 				'mid' => $messageId
 			));
 
-			$messageText = nl2br(
-				$message->value('message')
-			);
+			$title = $message->title();
+			$messageText = $message->get('message');
+			$senderName = $message->senderName();
+			$replyLink = '';
+
+			if ($message->senderId()) {
+				$messageText = nl2br($messageText);
+				$replyLink = "<a href='{$replyUrl}' class='button'>{{'reply'|i18n}}</a>";
+			}
+			else {
+				$title = "{{'{$title}'|i18n}}";
+				$senderName = "{{'{$senderName}'|i18n}}";
+
+				$parts = explode(':', $messageText);
+				$messageText = "{{'{$parts[0]}'|i18n:'{$parts[1]}':1}}";
+			}
 
 			$html .= "
 				<tr>
@@ -80,11 +91,11 @@ class RenderMessageOverview extends RenderMessageAbstract {
 					</td>
 					<td>
 						<span class='entypo-down-open bold tipTip showHideMessage' title='{$showHideMessage}'
-							data-seen='{$message->value('seen')}'
+							data-seen='{$message->get('seen')}'
 							data-url='{$seenUrl}'></span>
 					</td>
-					<td>{$message->value('senderName')}</td>
-					<td>{$message->value('title')}</td>
+					<td>{$senderName}</td>
+					<td>{$title}</td>
 					<td>{$created}</td>
 				</tr>
 				<tr class='message'>
@@ -92,15 +103,14 @@ class RenderMessageOverview extends RenderMessageAbstract {
 						<hr>
 						{$messageText}
 						<hr>
-						<a href='{$replyUrl}' class='button'>{$reply}</a>
-						<a href='{$deleteUrl}' class='button deleteMessage'>{$delete}</a>
+						{$replyLink}
+						<a href='{$deleteUrl}' class='button deleteMessage'>{{'delete'|i18n}}</a>
 					</td>
 				</tr>";
 		}
 
 		$html = html::defaultTable($html);
 
-		$messages = i18n('messages');
 		$reallyDeleteMessage = i18n('reallyDeleteMessage');
 
 		JavaScript::create()
@@ -108,7 +118,7 @@ class RenderMessageOverview extends RenderMessageAbstract {
 			->bind("$('.deleteMessage').deleteMessage('{$reallyDeleteMessage}')");
 
 		return "
-			<h2>{$messages}</h2>
+			<h2>{{'messages'|i18n}}</h2>
 			<div id='messages'>{$html}</div>";
 	}
 }

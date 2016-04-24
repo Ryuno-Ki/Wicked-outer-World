@@ -14,12 +14,12 @@ class RenderLogin extends RendererAbstract {
 		$username = i18n('username');
 		$password = i18n('password');
 
-		$headline = Game::getInstance()->name();
+		$headline = Game::getInstance()->name() . ' - Open Beta';
 		$developmentMessage = i18n('developmentMessage');
 
 		$html = "
 <div class='floatRight columnRight'>
-	<form action='' method='post' class='floatRight'>
+	<form action='{$_SERVER["REQUEST_URI"]}' method='post' class='floatRight'>
 		<table>
 			<tr>
 				<td>{$username}</td>
@@ -50,10 +50,9 @@ class RenderLogin extends RendererAbstract {
 	<hr>
 	<p class='headline bold'>News:</p>
 	<ul>
-		<li class='highlight'>Basic fight statistics added to profile.</li>
-		<li class='highlight'>Missing item tech data sheets added.</li>
-		<li class='highlight'>Several new weapons added.</li>
-		<li class='highlight'>Message System introduced.</li>
+		<li class='highlight'>You may own up to 3 starships now!</li>
+		<li class='highlight'>New Ship &quot;Revenant&quot;, Railgun and main energy to shields/weapons setup added.</li>
+		<li class='highlight'>New mission, new items and a spaceship model have been added.</li>
 	</ul>
 </div>
 <div class='clear'></div>";
@@ -98,13 +97,17 @@ class RenderLogin extends RendererAbstract {
 				`password` = MD5('{$password}')
 			LIMIT 1;";
 
-		$database = new database();	// @TODO Replace with Lisbeth_Database
+		$database = new Lisbeth_Database();
 		$database->query($sql);
 
 		$account = $database->fetch();
 		$database->freeResult();
 
 		if (!$account) {
+			EventBox::get()->failure(
+				i18n('loginFailed')
+			);
+
 			return null;
 		}
 

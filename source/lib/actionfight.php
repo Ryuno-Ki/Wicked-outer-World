@@ -54,7 +54,7 @@ class ActionFight extends ActionAbstract {
 	 * @return bool
 	 */
 	public function hasActionPoints() {
-		$actionPoints = $this->aggressor->account()->actionPoints();
+		$actionPoints = $this->aggressor->account()->realActionPoints();
 
 		return ($actionPoints >= self::ACTION_POINTS);
 	}
@@ -98,7 +98,22 @@ class ActionFight extends ActionAbstract {
 	 * @param Starship $starship
 	 */
 	public function update(Starship $starship) {
+		$starship->account()->update();
 		$starship->ammunition()->update();
+	}
+
+	/**
+	 * @param Account $attacker
+	 * @param Account $opponent
+	 * @param string $state
+	 */
+	protected function notifyOpponent(Account $attacker, Account $opponent, $state) {
+		$opponent->newMessage(
+			'youWereAttacked',
+			$state === 'lost'
+				? 'ambushLost:' . $attacker->name()
+				: 'ambushWon:' . $attacker->name()
+		);
 	}
 
 	/**
@@ -108,7 +123,6 @@ class ActionFight extends ActionAbstract {
 		if (!$this->canStart()) {
 			return '';
 		}
-
 		$account = $this->aggressor->account();
 		$account->incrementActionPoints(-self::ACTION_POINTS);
 
@@ -153,7 +167,8 @@ class ActionFight extends ActionAbstract {
 		$aggressorCondition->applyDamage();
 		$victimCondition->applyDamage();
 
-		$victimName = $this->victim->account()->name();
+		$victim = $this->victim->account();
+		$victimName = $victim->name();
 		if ($this->isWinner()) {
 			$plunder = new ActionFightPlunder();
 			$money = $plunder->apply($this->aggressor, $this->victim);
@@ -167,11 +182,15 @@ class ActionFight extends ActionAbstract {
 			else {
 				$message = i18n('skirmishCloseWon', $money, $victimName);
 			}
+
+			$this->notifyOpponent($account, $victim, 'lost');
 		}
 		else {
 			$experienceGain = 25;
 
 			$message = i18n('skirmishLost', $victimName);
+
+			$this->notifyOpponent($account, $victim, 'won');
 		}
 
 		$account->levelProgress()->addExperience($experienceGain);

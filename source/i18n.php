@@ -80,6 +80,33 @@ $translations = array(
 		'en' => 'Relentless-Class space gliders have many supplement-slots and thus are specially designed for exploration missions.'
 	),
 
+	'nameEdinburgV5' => array(
+		'de' => 'Edinburg v5',
+		'en' => 'Edinburg v5'
+	),
+	'descEdinburgV5' => array(
+		'de' => 'Nach einigen skandalösen Pannen bei der Inbetriebnahme ist der Konzern nun sicher, dass die 5. Version der Edinburg den Jungfernflug sicher übersteht.',
+		'en' => 'After a few scandalous malfunctions during the launch, the company now is sure that the 5th version of the Edinburg will endure the maiden flight.'
+	),
+
+	'nameRevenant' => array(
+		'de' => 'Revenant',
+		'en' => 'Revenant'
+	),
+	'descRevenant' => array(
+		'de' => 'Dieses Modell kann einiges einstecken, doch die hohe interne Struktur kostet Raum für Ausrüstung.',
+		'en' => 'This one sure can take some bullets, but its high internal structure comes with less equipment space.'
+	),
+
+	'nameIgnis' => array(
+		'de' => 'Ignis',
+		'en' => 'Ignis'
+	),
+	'descIgnis' => array(
+		'de' => 'Die Ignis, auch "Feuervogel" genannt, wurde mit einer dicken Hülle für "heisse Einsätze" gebaut... nein, keine Kampfeinsätze sondern Sonnenmessungen, daher der große Raum für Ausrüstung.',
+		'en' => 'The Ignis, also called "Firebird", was designed with a thick hull for "hot missions"... no, not for battles, but for solar science, that\'s what the large equipment storage is for.'
+	),
+
 /*
 	'cargoNameCargoModule' => array(
 		'de' => 'Frachtmodul',
@@ -134,6 +161,15 @@ $translations = array(
 		'en' => "Simple steel plates protect the hull from particle strikes. But they are also used as cheap armor; and who could even tell where the difference between micro-meteorites and infernal hell lasers is?"
 	),
 
+	'nameDeflectorPlating' => array(
+		'de' => 'Deflektor Panzerung',
+		'en' => 'Deflector Plating'
+	),
+	'descDeflectorPlating' => array(
+		'de' => "Noch ein paar Veredelungsmaterialien hinzufügen und schon geht's los!",
+		'en' => 'Adding some refining material and here we go!'
+	),
+
 	'nameKineticShield' => array(
 		'de' => 'Kinetischer Schild',
 		'en' => 'Kinetic Shield'
@@ -170,6 +206,15 @@ $translations = array(
 		'en' => "Blaster could be described as the further development of marketable guns, but this small model is already far beyond outdated."
 	),
 
+	'nameStingerRailgun' => array(
+		'de' => 'Stinger Railgun',
+		'en' => 'Stinger Railgun'
+	),
+	'descStingerRailgun' => array(
+		'de' => "Railguns sind schöne kleine Spielzeuge. Wenn man ihnen genug Energie bereitstellt hält keine Schiffshülle dem Beschuss lange stand.",
+		'en' => "Railguns are nice little toys. If provided with enough energy no ship hull can withstand them for a long time."
+	),
+
 	'nameShark2' => array(
 		'de' => 'Shark-2 Werfer',
 		'en' => 'Shark-2 Thrower'
@@ -186,6 +231,15 @@ $translations = array(
 	'descShark5' => array(
 		'de' => 'Mehr Torpedos, mehr Treffer - ganz einfach!',
 		'en' => 'More torpedoes, more hits - quite simple!'
+	),
+
+	'nameMicroLaser' => array(
+		'de' => 'Mikrolaser',
+		'en' => 'MicroLaser'
+	),
+	'descMicroLaser' => array(
+		'de' => 'Ein fieser kleiner Geselle der Laser-Familie. Er "sticht" nicht stark, aber oft.',
+		'en' => 'A mean little companion of the laser-family. His stings are not strong, but he stings often.'
 	),
 
 	'nameLightLaser' => array(
@@ -240,6 +294,15 @@ $translations = array(
 	'descBlasterAmmunition' => array(
 		'de' => "Hier ist der Name Programm: Das Hocherhitzte Plasma sengt dem Gegner nicht nur den Bürzel an, sondern ist auch kostengünstig in der Anschaffung.",
 		'en' => "Here the name says it: The high heated plasma not only burns your opponent's rump, but is also a cheap acquisition."
+	),
+
+	'nameRailgunAmmunition' => array(
+		'de' => 'Railgun Munition',
+		'en' => 'Railgun Ammunition'
+	),
+	'descRailgunAmmunition' => array(
+		'de' => "Je komplexer der Aufbau der Waffe, desto einfacher die Munition. Eine gewöhnliche Eisenkugel genügt hier bereits.",
+		'en' => "The more complex the weapon system, the simpler the ammunition. A common iron ball is just enough here."
 	),
 
 	'nameSharkTorpedoes' => array(
@@ -434,6 +497,22 @@ $translations = array(
 		'de' => 'Kühler sind zum Schutz allen Hitzerzeugenden Komponenten im Einsatz.',
 		'en' => 'Cooler are used to protect all heat generating components.'
 	),
+	'nameFood' => array(
+		'de' => 'Nahrung',
+		'en' => 'Food'
+	),
+	'descFood' => array(
+		'de' => 'Einfache Nahrungsvorräte.',
+		'en' => 'Simple food supplies.'
+	),
+	'nameWatch' => array(
+		'de' => 'Platin Armbanduhr',
+		'en' => 'Platinum Watch'
+	),
+	'descWatch' => array(
+		'de' => 'Eine Platin Armbanduhr, welche wohl einst einem verunglückten Astronauten gehörte.',
+		'en' => 'A platinum watch that once belonged to an accidentally crashed astronaut.'
+	),
 
 	/*****************************************************
 	 * Starship
@@ -499,6 +578,10 @@ $translations = array(
 	'neededLevel' => array(
 		'de' => 'Benötigtes Level: %s',
 		'en' => 'Needed level: %s'
+	),
+	'noLevelRequirement' => array(
+		'de' => 'Keine Levelanforderung',
+		'en' => 'No level requirement'
 	),
 
 	/*****************************************************
@@ -748,14 +831,6 @@ $translations = array(
 		'de' => 'Ein Shopping-Zentrum im Weltraum? Na, warum nicht!',
 		'en' => 'A shopping centre out in space? Well, why not!'
 	),
-	'shop' => array(
-		'de' => 'Laden',
-		'en' => 'Shop'
-	),
-	'shopDescription' => array(
-		'de' => 'Du suchst nach der besten Ausrüstung in diesem großen schwarzen nichts? Sieh Dich einfach etwas um.',
-		'en' => 'Searching for the finest hardware out in that big black room? Just take a look around.'
-	),
 	'grocer' => array(
 		'de' => 'Krämer',
 		'en' => 'Grocer'
@@ -763,10 +838,6 @@ $translations = array(
 	'grocerDescription' => array(
 		'de' => 'Du hast ein paar gebrauchte Dinge übrig? Hmm... mal sehen ob ich damit etwas anfangen kann.',
 		'en' => 'You got some things left over? Hmm... lets see if I can take use of something.'
-	),
-	'starships' => array(
-		'de' => 'Raumschiffe',
-		'en' => 'Starships'
 	),
 	'airlock' => array(
 		'de' => 'Luftschleuse',
@@ -803,10 +874,6 @@ $translations = array(
 	'youArePoor' => array(
 		'de' => 'Du bist arm wie eine Kirchenmaus!',
 		'en' => 'You are as poor as a church mouse!'
-	),
-	'buyStarshipNotice' => array(
-		'de' => 'Bevor Du ein neues Schiff kaufst, solltest Du alle Objekte, die Du behalten möchtest, aus Deinem alten Schiff ausbauen.',
-		'en' => 'Before you buy a new ship, you should unequip all items, you want to keep, from your old ship.'
 	),
 	'attention' => array(
 		'de' => 'Achtung',
@@ -928,33 +995,9 @@ $translations = array(
 	 * Messages
 	 ****************************************************/
 
-	'write' => array(
-		'de' => 'Schreiben',
-		'en' => 'Write'
-	),
 	'sent' => array(
 		'de' => 'Gesendet',
 		'en' => 'Sent'
-	),
-	'action' => array(
-		'de' => 'Aktion',
-		'en' => 'Action'
-	),
-	'sender' => array(
-		'de' => 'Absender',
-		'en' => 'Sender'
-	),
-	'subject' => array(
-		'de' => 'Betreff',
-		'en' => 'Subject'
-	),
-	'stardate' => array(
-		'de' => 'Sternzeit',
-		'en' => 'Stardate'
-	),
-	'delete' => array(
-		'de' => 'Löschen',
-		'en' => 'Delete'
 	),
 	'deleteMessage' => array(
 		'de' => 'Nachricht löschen',
@@ -968,21 +1011,9 @@ $translations = array(
 		'de' => 'Nachricht wirklich weghauen?',
 		'en' => 'Really dump message?'
 	),
-	'reply' => array(
-		'de' => 'Antworten',
-		'en' => 'Reply'
-	),
 	'messageDeleted' => array(
 		'de' => 'Du hast die Nachricht weggehauen.',
 		'en' => 'You dumped the message.'
-	),
-	'send' => array(
-		'de' => 'Senden',
-		'en' => 'Send'
-	),
-	'recipient' => array(
-		'de' => 'Empfänger',
-		'en' => 'Recipient'
 	),
 	'recipientNotFound' => array(
 		'de' => 'Wir konnten den Spieler %s leider nicht finden.',
@@ -1097,10 +1128,6 @@ $translations = array(
 	'training' => array(
 		'de' => 'Training',
 		'en' => 'Training'
-	),
-	'cannotStartTraining' => array(
-		'de' => 'Du bist fix und fertig!',
-		'en' => "You're all run down!"
 	),
 	'tactics' => array(
 		'de' => 'Taktik',
@@ -1360,6 +1387,14 @@ $translations = array(
 		'de' => 'Schilde erfordern inital Energie um sich aufzubauen. Jeder Treffer zieht Energie vom Schild ab, bis die Schildstärke auf null gefallen ist und es kollabiert. Schilde können sich jederzeit neu aufbauen oder regenerieren, sofern genügend Energie verfügbar ist. Schilde können, zusätzlich zu ihrer Schutzwirkung, den Schaden durch Absorbtion reduzieren, sofern Absorbtionstyp und Schadenstyp übereinstimmen.',
 		'en' => 'Shields require initial energy to build up. Every hits drains energy from the shield until its power drops to zero and it collapses. Shields can build up or regenerate any time, given there is enough energy available. In addition to the shields protective effect it can reduce damage when the absorb-type matches the damage-type.'
 	),
+	'reactorHelp' => array(
+		'de' => 'Reaktoren versorgen Deine Waffensysteme und Schilde mit Energie. Je höher die Aufladung ist, desto schneller füllt sich die nutzbare Kapazität auf.',
+		'en' => "Reactors provide power supply for your ship's weapon systems and shields. The higher the recharge rate, the fast the usable capacity recharges."
+	),
+	'driveHelp' => array(
+		'de' => 'Antriebe mit mehr Schubkraft verbessern die Wendigkeit des Schiffes und damit Deine Ausweichchance. Je schwerer das Schiff, desto stärker sollte der Antrieb sein.',
+		'en' => 'Drives with more thurst increase the agility of the ship and thus your evasion chance. The heavier the ship, the stronger the drive should be.'
+	),
 
 	/*****************************************************
 	 * Sidebar / Star Base
@@ -1476,12 +1511,12 @@ $translations = array(
 		'en' => 'Lucky day! You found %s s£!'
 	),
 	'missionTalkedWithPilots' => array(
-		'de' => 'Du hast Dich mit einem anderen Piloten unterhalten.',
-		'en' => 'You talked to another pilot.'
+		'de' => 'Du hast Dich mit einem anderen Piloten unterhalten. (%s Erfahrung)',
+		'en' => 'You talked to another pilot. (%s Experience)'
 	),
 	'missionThoughtAboutLife' => array(
-		'de' => 'Du hast über Dein Leben nachgedacht.',
-		'en' => 'You thought about your life.'
+		'de' => 'Du hast über Dein Leben nachgedacht. (%s Erfahrung)',
+		'en' => 'You thought about your life. (%s Experience)'
 	),
 
 	'missionCollectJunk' => array(
@@ -1489,12 +1524,12 @@ $translations = array(
 		'en' => 'Collect Junk'
 	),
 	'missionMetWithJunkers' => array(
-		'de' => 'Du hast Dich mit anderen Schrottsammlern unterhalten.',
-		'en' => 'You talked to other junkers.'
+		'de' => 'Du hast Dich mit anderen Schrottsammlern unterhalten. (%s Erfahrung)',
+		'en' => 'You talked to other junkers. (%s Experience)'
 	),
 	'missionBlindedByTheSun' => array(
-		'de' => 'Du wurdest von der Sonne geblendet.',
-		'en' => 'You have been blinded by the sun.'
+		'de' => 'Du wurdest von der Sonne geblendet. (%s Erfahrung)',
+		'en' => 'You have been blinded by the sun. (%s Experience)'
 	),
 	'missionFoundSpaceJunk' => array(
 		'de' => 'Du hast Weltraumschrott gefunden!',
@@ -1512,6 +1547,43 @@ $translations = array(
 	'missionExploration' => array(
 		'de' => 'Erkundung',
 		'en' => 'Exploration'
+	),
+	'missionSawShootingStar' => array(
+		'de' => 'Du hast eine Sternschnuppe gesehen. (%s Erfahrung)',
+		'en' => 'You saw a shooting star. (%s Experience)'
+	),
+	'missionLookingForTheSun' => array(
+		'de' => 'Du orientierst Dich nach der Sonne. (%s Erfahrung)',
+		'en' => 'You orientate yourself by the sun. (%s Experience)'
+	),
+	'missionSawStardust' => array(
+		'de' => 'Du hast Sternenstaub gesehen. (%s Erfahrung)',
+		'en' => 'You saw stardust. (%s Experience)'
+	),
+	'missionFoundFloatingJunk' => array(
+		'de' => 'Du hast zufällig herumfliegenden Weltraumschrott gefunden.',
+		'en' => 'You found accidentially floating around space junk.'
+	),
+	'missionWatchingStarships' => array(
+		'de' => 'Du hast andere Raumschiffe beobachtet. (%s Erfahrung)',
+		'en' => 'You are watching other starships. (%s Experience)'
+	),
+	'missionEvadingAsteroid' => array(
+		'de' => 'Du bist einem Asteroiden ausgewichen. (%s Erfahrung)',
+		'en' => 'You evaded an asteroid. (%s Experience)'
+	),
+
+	'missionCarriage' => array(
+		'de' => 'Transporter',
+		'en' => 'Transporter'
+	),
+	'missionDeliverySuccess' => array(
+		'de' => 'Du hast das Paket für %s s£ ungeöffnet und ohne Fragen zu stellen ausgeliefert.',
+		'en' => 'You delivered the package unopened and without asking further questions for %s s£.'
+	),
+	'missionDeliveryFailure' => array(
+		'de' => 'Bei der Lieferung gab es... gewisse "Komplikationen". (%s Erfahrung)',
+		'en' => 'There have been some... intricacies during the delivery. (%s Experience)'
 	),
 
 	/*****************************************************
@@ -1534,6 +1606,10 @@ $translations = array(
 		'de' => 'Logout',
 		'en' => 'Logout'
 	),
+	'loginFailed' => array(
+		'de' => 'Spieler nicht gefunden.',
+		'en' => 'Player not found.'
+	),
 	'logoutHeadline' => array(
 		'de' => 'Fehler: Seite nicht gefunden',
 		'en' => 'Error: Page not found'
@@ -1547,8 +1623,8 @@ $translations = array(
 		'en' => 'No, just kidding. See you next time! ;)'
 	),
 	'developmentMessage' => array(
-		'de' => 'Du kannst Dich bereits registrieren, das Spiel ist jedoch noch in der Alpha-Entwicklung.',
-		'en' => 'You may already register, but the game is still under alpha construction.'
+		'de' => 'Wicked outer World wird gerade entwickelt und es kommen regelmäßig neue Features hinzu. Registriere Dir einen Account und gib uns Feedback!',
+		'en' => 'Wicked outer World is currently being developed and new features arrive at a regular basis. Register yourself an account and give us feedback!'
 	),
 
 	/*****************************************************
@@ -1594,6 +1670,10 @@ $translations = array(
 	'wtfIsThis' => array(
 		'de' => 'WTF is this??? (klick)',
 		'en' => 'WTF is this??? (click)'
+	),
+	'showIt' => array(
+		'de' => 'Zeigs mir!',
+		'en' => 'Show it!'
 	),
 	'accountData' => array(
 		'de' => 'Dein %s Account',
@@ -1644,25 +1724,25 @@ Your %s team"
 		'de' => 'Deine Account-Daten wurden an "%s" gesendet.',
 		'en' => 'You account data has been sent to "%s".'
 	),
-	'damageDealt' => array(
-		'de' => 'Schaden ausgeteilt',
-		'en' => 'Damage dealt'
-	),
-	'damageTaken' => array(
-		'de' => 'Schaden eingesteckt',
-		'en' => 'Damage taken'
-	),
-	'hits' => array(
-		'de' => 'Treffer',
-		'en' => 'Hits'
-	),
-	'misses' => array(
-		'de' => 'Verschielt',
-		'en' => 'Off the mark'
-	),
 	'confirm' => array(
 		'de' => 'Bestätigen',
 		'en' => 'Confirm'
+	),
+	'save' => array(
+		'de' => 'Speichern',
+		'en' => 'Save'
+	),
+	'passwordForgotten' => array(
+		'de' => 'Hast Du vergessen ein Passwort einzugeben?',
+		'en' => 'Did you forget to enter a password?'
+	),
+	'passwordSaved' => array(
+		'de' => 'Password gespeichert.',
+		'en' => 'Password saved.'
+	),
+	'changePassword' => array(
+		'de' => 'Passwort ändern',
+		'en' => 'Change password'
 	),
 	'abandonAccount' => array(
 		'de' => 'Account aufgeben',

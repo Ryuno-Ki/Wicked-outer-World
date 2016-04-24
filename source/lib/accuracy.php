@@ -43,9 +43,10 @@ class Accuracy {
 
 	/**
 	 * @param Technology $item
+	 * @param bool $subtractAmmunition
 	 * @return int
 	 */
-	public function maxShots(Technology $item) {
+	public function maxShots(Technology $item, $subtractAmmunition = false) {
 		$burst = $item->burst();
 
 		$ammunition = $item->ammunitionItem();
@@ -53,13 +54,18 @@ class Accuracy {
 			$group = $this->firingStarship->ammunition();
 			$techId = $ammunition->id();
 
-			$ammunitionAmount = 0;
 			if ($group->hasItem($techId)) {
 				$ammunition = $group->item($techId);
 				$ammunitionAmount = $ammunition->amount();
-			}
 
-			$burst = min($burst, $ammunitionAmount);
+				$burst = min($burst, $ammunitionAmount);
+				if ($subtractAmmunition) {
+					$ammunition->sub($burst);
+				}
+			}
+			else {
+				$burst = 0;
+			}
 		}
 
 		return $burst;
@@ -67,19 +73,18 @@ class Accuracy {
 
 	/**
 	 * @param Technology $item
+	 * @param bool $subtractAmmunition
 	 * @return int
 	 */
-	public function hits(Technology $item) {
+	public function hits(Technology $item, $subtractAmmunition = false) {
 		$this->hits = 0;
 
 		/*
-		 * @TODO calculate by skills
-		 *
 		 * $starship->maxWeight() for ship size (overall hit probability)
 		 * $starship->weight() for maneuverability
 		 */
 		$this->hitSomething(
-			$this->maxShots($item)
+			$this->maxShots($item, $subtractAmmunition)
 		);
 
 		return $this->hits;
@@ -107,10 +112,10 @@ class Accuracy {
 
 	/**
 	 * Formula:
-	 * P1: (100 / 0)
-	 * P2: (70 / 50)
+	 * P1: (100 / 50)
+	 * P2: (70 / 75)
 	 * P3: (0 / 100)
-	 * f(x) = -0,0095238095x² - 0,0476190476x + 100
+	 * f(x) = -0,0047619048x² - 0,0238095238x + 100
 	 *
 	 * @return int
 	 */
@@ -119,8 +124,8 @@ class Accuracy {
 			$movability = $this->opponentStarship->movability();
 
 			$this->chance =
-				-0.0095238095 * ($movability * $movability) -
-				0.0476190476 * $movability +
+				-0.0047619048 * ($movability * $movability) -
+				0.0238095238 * $movability +
 				100;
 
 			$opponent = $this->opponentStarship->account();

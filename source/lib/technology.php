@@ -3,7 +3,7 @@
 /**
  * Handles Technology.
  */
-class Technology extends AccountSubclass{
+class Technology extends AccountSubclass {
 	const TYPE_STOCKAGE			= 0;	// Item stockage
 	const TYPE_STARSHIP			= 1;	// Starships
 	const TYPE_WEAPON			= 2;	// Weapons
@@ -540,8 +540,6 @@ class Technology extends AccountSubclass{
 
 	/**
 	 * Return the capacity of al items (amount * capacity).
-	 *
-	 * @TODO Add pure capacity items when invented...
 	 *
 	 * @return float|int
 	 */

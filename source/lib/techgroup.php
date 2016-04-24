@@ -270,7 +270,7 @@ class techGroup extends techContainerSubclass {
 		$thrust = 0;
 
 		foreach ($this->items() as $technology) {
-			$thrust += $technology->thrust();
+			$thrust += $technology->thrust() * $technology->amount();
 		}
 
 		return $thrust;
@@ -391,12 +391,12 @@ class techGroup extends techContainerSubclass {
 			return false;
 		}
 
-		$account = $this->techContainer()->account();
+		$dataSource = $this->techContainer()->dataSource();
 
 		$field = techSelector::fieldFromType($this->type());
 		$items = $this->toJson();
-		$account
-			->setValue($field, $items)
+		$dataSource
+			->set($field, $items)
 			->update();
 
 		return true;

@@ -156,7 +156,7 @@ class ActionFightTimer {
 		$hits = $accuracy
 			->setFiringStarship($starship)
 			->setOpponentStarship($this->opponent())
-			->hits($item);
+			->hits($item, true);
 
 		$total = $accuracy->maxShots($item);
 
@@ -334,8 +334,13 @@ class ActionFightTimer {
 
 		$this->recharge();
 
-		// @TODO Toggle call order with different setups.
-		$this->fireWeapons();
-		$this->powerUpShield();
+		if ($this->starship()->isEnergyToShields()) {
+			$this->powerUpShield();
+			$this->fireWeapons();
+		}
+		else {
+			$this->fireWeapons();
+			$this->powerUpShield();
+		}
 	}
 }

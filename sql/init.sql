@@ -98,3 +98,11 @@ ALTER TABLE `accounts` CHANGE `astronauticsLevel` `defenseLevel` INT( 10 ) UNSIG
 CHANGE `astronauticsExperience` `defenseExperience` INT( 10 ) UNSIGNED NOT NULL DEFAULT '0' ;
 
 ALTER TABLE  `entities` CHANGE  `commandCreated`  `timeout` BIGINT( 20 ) NOT NULL DEFAULT  '0' ;
+
+ALTER TABLE  `accounts` ADD  `trainings` BIGINT UNSIGNED NOT NULL DEFAULT  '0' AFTER  `misses` ;
+
+ALTER TABLE  `accounts` ADD  `energySetup` TINYINT UNSIGNED NOT NULL DEFAULT  '0' AFTER  `repair` ;
+
+ALTER TABLE  `accounts` ADD  `timeRegistered` INT UNSIGNED NOT NULL DEFAULT  '0' ;
+
+ALTER TABLE  `entities` CHANGE  `sectorId`  `techId` INT UNSIGNED NOT NULL DEFAULT  '0' ;

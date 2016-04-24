@@ -4,6 +4,11 @@
  */
 class Config {
 	/**
+	 * @var Config
+	 */
+	private static $instance;
+
+	/**
 	 * @var stdClass
 	 */
 	private $configs;
@@ -13,11 +18,12 @@ class Config {
 	 * @return Config
 	 */
 	public static function getInstance() {
-		/* @var Config $config */
-		$config = ObjectPool::getLegacy('config');
-		$config->init();
+		if (!self::$instance) {
+			self::$instance = new self();
+			self::$instance->init();
+		}
 
-		return $config;
+		return self::$instance;
 	}
 
 	/**
@@ -61,19 +67,19 @@ class Config {
 	public function missions() {
 		if (!isset($this->configs->missions)) {
 			$this->configs->missions =
-				require_once 'source/configs/mission_config.php';
+				require_once 'source/configs/mission.php';
 		}
 
 		return $this->configs;
 	}
 
 	/**
+	 * @param array $routes
 	 * @return stdClass
 	 */
-	public function routes() {
-		if (!isset($this->configs->routes)) {
-			$this->configs->routes =
-				require_once 'source/configs/route_config.php';
+	public function routes(array $routes = null) {
+		if ($routes) {
+			$this->configs->routes = $routes;
 		}
 
 		return $this->configs;

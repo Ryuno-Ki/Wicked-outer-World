@@ -1,5 +1,6 @@
 /*jslint evil: true, sloppy: true, plusplus: true, newcap: true, browser: true */
-/*global jQuery: true, $: true, alert: true, escape: true, ActiveXObject: true */
+/*global jQuery: true, angular: true, translations: true, $: true, alert: true, escape: true, ActiveXObject: true */
+
 
 Math.sign = function (value) {
 	if (value === 0) {
@@ -12,6 +13,7 @@ Math.sign = function (value) {
 
 	return -1;
 };
+
 
 function ConfirmBox(initCallback, confirmCallback) {
 	this.show = function (title, html) {
@@ -97,7 +99,6 @@ function ConfirmBox(initCallback, confirmCallback) {
 	};
 }
 
-
 (function ($) {
 	$.progressBar = function (duration, callback) {
 		$('.progressBar').find('span').animate(
@@ -108,39 +109,386 @@ function ConfirmBox(initCallback, confirmCallback) {
 		);
 	};
 
+	/**
+	 * @param {{maskedId: {string}, unmaskedId: {string}}} options
+	 */
+	$.fn.password = function (options) {
+		var $checkbox = $(this),
+			$masked,
+			$unmasked,
+			defaults = {
+				maskedId: 'password',
+				unmaskedId: 'passwordUnmasked'
+			};
 
-	$.fn.academyTraining = function () {
-		$('.trainSkill').click(function (event) {
-			var $this = $(this),
-				href = $this.attr('href');
+		options = $.extend({}, defaults, options);
+		$masked = $('#' + options.maskedId);
+		$unmasked = $('#' + options.unmaskedId);
 
-			if ($this.hasClass('disabled')) {
-				event.preventDefault();
+		$checkbox.change(function () {console.log('jop');
+			$masked.attr('name', null);
+			$unmasked.attr('name', null);
 
+			if ($checkbox.is(':checked')) {
+				$unmasked.attr('value', $masked.attr('value'));
+				$unmasked.attr('name', options.maskedId);
+			}
+			else {
+				$masked.attr('value', $unmasked.attr('value'));
+				$masked.attr('name', options.maskedId);
+			}
+
+			$masked.toggle();
+			$unmasked.toggle();
+		});
+
+		return $checkbox;
+	};
+}(jQuery));
+
+
+var wowApp = angular.module('wowApp', []);
+
+(function ($, angular, wowApp, translations) {
+	wowApp.filter('i18n', function () {
+		return function (translationKey) {
+			var result = translationKey,
+				args;
+
+			if (translations[translationKey]) {
+				result = translations[translationKey];
+			}
+
+			if (arguments.length > 1) {
+				args = Array.prototype.slice.call(arguments, 1);
+
+				result = result.replace(/%(\d+)/g, function(unused, index) {
+					return args[--index];
+				});
+			}
+
+			return result;
+		};
+	});
+
+	wowApp.filter('round', function () {
+		return function (value) {
+			return Math.round(value);
+		};
+	});
+
+	wowApp.directive('ngStatusBar', function() {
+		return {
+			restrict: 'E',
+			template:
+				'<div class="statusBar" title="{{current|round}} / {{max|round}}">' +
+					'<div class="display" ng-style="{ width: progress }"></div>' +
+				'</div>',
+			scope: {
+				current: '=',
+				max: '='
+			},
+			link: function($scope) {
+				$scope.progress = 0;
+
+				if ($scope.current > 0) {
+					$scope.progress = 99 * ($scope.current / $scope.max);
+					$scope.progress = Math.round($scope.progress);
+				}
+			}
+		};
+	});
+
+
+	/**
+	 * Layer Controller
+	 */
+	wowApp.controller('LayerCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+		$scope.visible = false;
+		$scope.title = '';
+		$scope.type = '';
+		$scope.data = [];
+
+		$rootScope.on('show', function (data) {
+			$scope.visible = true;
+			$scope.type = data.type;
+		});
+
+		$scope.show = function (type) {
+			$scope.visible = true;
+		};
+
+		$scope.hide = function () {
+			$scope.visible = false;
+		};
+	}]);
+
+	/**
+	 * Profile Controller
+	 */
+	wowApp.controller('ProfileCtrl', ['$scope', function ($scope) {
+		$scope.stats = [];
+
+		/**
+		 * @param {[]} stats
+		 */
+		$scope.setup = function (stats) {
+			$scope.stats = stats;
+		};
+	}]);
+
+	wowApp.controller('AcademyTrainingCtrl', ['$scope', '$filter', function ($scope, $filter) {
+		$scope.started = false;
+		$scope.disciplines = [];
+
+		/**
+		 * @param {object[]} disciplines
+		 */
+		$scope.setup = function (disciplines) {
+			$scope.disciplines = disciplines;
+		};
+
+		/**
+		 * @param {object} discipline
+		 */
+		$scope.info = function (discipline) {
+			var infoBox = new ConfirmBox(),
+				title = $filter('i18n')('info'),
+				headline = $filter('i18n')(discipline.name),
+				text = $filter('i18n')(discipline.name + 'Help');
+
+			infoBox.show(
+				title,
+				'<h2 class="ceil">' + headline + '</h2>' + text
+			);
+		};
+
+		/**
+		 * @param {object} discipline
+		 */
+		$scope.start = function (discipline) {
+			if (!discipline.canStart || $scope.started) {
 				return;
 			}
 
-			$('.trainingOverview').fadeOut(
-				'default',
-				function () {
-					$('.progressBar').fadeIn(
-						'default',
-						function () {
-							$.progressBar(
-								3000,
-								function () {
-									window.location = href;
-								}
-							);
-						}
-					);
-				}
-			);
+			$scope.started = true;
 
-			event.preventDefault();
-		});
-	};
-}(jQuery));
+			$('.trainingOverview').fadeOut('default', function () {
+				$('.progressBar').fadeIn('default', function () {
+					$.progressBar(3000, function () {
+						window.location.href = discipline.url;
+					});
+				});
+			});
+		};
+	}]);
+
+	/**
+	 * Jump Gate Controller
+	 */
+	wowApp.controller('JumpGateCtrl', ['$scope', '$filter', '$http', function ($scope, $filter, $http) {
+		$scope.travelPrice = 0;
+		$scope.currentSector = {};
+		$scope.money = 0;
+		$scope.sector = {};
+		$scope.sectors = [];
+
+		/**
+		 * @param {object[]} sectors
+		 * @param {number} sectorId
+		 * @param {number} money
+		 */
+		$scope.setup = function (sectors, sectorId, money) {
+			$scope.money = money;
+			$scope.sectors = sectors;
+			$scope.currentSector = sectors[sectorId];
+			$scope.showInfo($scope.currentSector);
+		};
+
+		/**
+		 * @param {object} sector
+		 */
+		$scope.showInfo = function (sector) {
+			var result = 0,
+				x = sector.x - $scope.currentSector.x,
+				y = sector.y - $scope.currentSector.y;
+
+			if (sector.key !== $scope.currentSector.key) {
+				result = Math.sqrt((x * x) + (y * y));
+				result = 0.015 * (result * result) + 1.75 * result + 4;
+				result = Math.round(result);
+			}
+
+			$scope.sector = sector;
+			$scope.travelPrice = result;
+		};
+
+		/**
+		 * @param {string} key
+		 * @returns {boolean}
+		 */
+		$scope.isSelected = function (key) {
+			return ($scope.sector.key === key);
+		};
+
+		/**
+		 * @param {object[]} sectors
+		 */
+		$scope.updateSector = function (sectors) {
+			$.each(sectors, function (key, sector) {
+				if (sector.key === $scope.sector.key) {
+					$scope.sector = sector;
+					return false;
+				}
+				return true;
+			});
+		};
+
+		/**
+		 * @param {object} sector
+		 */
+		$scope.unlockSector = function (sector) {
+			if (sector.isAvailable || !sector.canAfford || !sector.hasLevelRequirement) {
+				return;
+			}
+
+			$http.post('?page=unlockSector', { sectorId: sector.key })
+				.success(function (json) {
+					$scope.sectors = json.sectors;
+					$scope.updateSector(json.sectors);
+
+					$('.premiumCoins').text(json.premiumCoins);
+				});
+		};
+
+		/**
+		 * @param {object} sector
+		 */
+		$scope.travelTo = function (sector) {
+			if ($scope.travelPrice > $scope.money) {
+				return;
+			}
+
+			$http.post('?page=travelTo', { sectorId: sector.key })
+				.success(function () {
+					var animationBox = new ConfirmBox();
+					animationBox.show(
+						$filter('i18n')('movingToNewSector'),
+						"<canvas id='jumpGateTravel' width='380' height='80'></canvas>"
+					);
+
+					$('#infoLayer').find('.container').removeClass('small');
+					$('#jumpGateTravel').engine2d(function (engine2d) {
+						var stop = false;
+
+						engine2d.appendFunction('moveFighter', function (entity) {
+							if (stop) {
+								return;
+							}
+
+							entity.position.add(vector(5, 0));
+							if (entity.position.x > 420) {
+								stop = true;
+								window.location.href = '?page=jumpGate';
+							}
+						});
+
+						engine2d.appendFunction('fighterBooster', function (entity) {
+							entity.layer = entity.parentEntity.layer + 1;
+							entity.position.x = -entity.parentEntity.size.x / 2;
+							entity.position.y = 0;
+							entity.position
+								.rotate(entity.parentEntity.angle)
+								.add(entity.parentEntity.position);
+
+							entity.scale.normalize(
+								1.2 + 0.2 * Math.sin(entity.animationOffset + engine2d.totalTime / 10)
+							);
+						});
+
+						engine2d.appendFunction('createFighter', function () {
+							var fighter, flare;
+
+							fighter = engine2d.entityCreate(
+								'./wow/img/default_fighter.png',
+								engine2d.functions.moveFighter,
+								vector(-20, 40)
+							);
+
+							fighter.angle = 0;
+							flare = engine2d.entityCreate(
+								'./wow/img/white_flare.png',
+								engine2d.functions.fighterBooster,
+								vector()
+							);
+
+							flare.parentEntity = fighter;
+							flare.animationOffset = Math.random() * 360;
+
+							return fighter;
+						});
+
+						engine2d.appendFunction('moveBackground', function (entity) {
+							entity.position.add(vector(-0.25, 0));
+						});
+
+						engine2d.appendFunction('createBackground', function () {
+							engine2d.entityCreate(
+								'./wow/img/space_earth.jpg',
+								engine2d.functions.moveBackground,
+								vector(240, 40)
+							);
+						});
+
+						engine2d.functions.createBackground();
+						engine2d.functions.createFighter();
+					});
+				});
+		};
+	}]);
+
+	/**
+	 * Starship Selector Controller
+	 */
+	wowApp.controller('StarshipSelectorCtrl', ['$scope', '$filter', function ($scope, $filter) {
+		$scope.starships = [];
+
+		/**
+		 * @param {[]} starships
+		 */
+		$scope.setup = function (starships) {
+			$scope.starships = starships;
+		};
+
+		/**
+		 * @param {object} starship
+		 * @returns {string}
+		 */
+		$scope.starshipName = function (starship) {
+			return (starship.name || 'empty');
+		};
+
+		/**
+		 * @param starship
+		 * @returns {string}
+		 */
+		$scope.actionText = function (starship) {
+			return starship.current ? 'selected' : 'select';
+		};
+
+		/**
+		 * @param $event
+		 * @param {object} starship
+		 */
+		$scope.scrap = function ($event, starship) {
+			var message = $filter('i18n')('confirmScrapStarship');
+
+			if (!starship.name || starship.current || !window.confirm(message)) {
+				$event.preventDefault();
+			}
+		};
+	}]);
+}(jQuery, angular, wowApp, translations));
 
 (function ($) {
 	$.fn.moreGames = function () {
@@ -298,34 +646,39 @@ function ConfirmBox(initCallback, confirmCallback) {
  * Wrapped function closure for tech info.
  */
 (function ($) {
+	$.openTechInfo = function (techId) {
+		var url = "?page=techInfo&techId=" + techId,
+			techInfo = new ConfirmBox(),
+			$layer;
+
+		techInfo.show('', '');
+		$layer = $('#infoLayer');
+		$layer.find('.container').removeClass('small');
+
+		$.ajax({
+			url: url,
+			success: function (html) {
+				var $html = $(html),
+					$title = $html.filter('h2'),
+					$header = $layer.find('.header'),
+					$content = $layer.find('.content');
+
+				$header.append(
+					$title.text()
+				);
+
+				$title.remove();
+
+				$content.html($html);
+			}
+		});
+	};
+
 	$.fn.techInfo = function () {
 		$(this).click(function () {
-			var techId = $(this).attr('data-techId'),
-				url = "?page=techInfo&techId=" + techId,
-				techInfo = new ConfirmBox(),
-				$layer;
+			var techId = $(this).attr('data-techId');
 
-			techInfo.show('', '');
-			$layer = $('#infoLayer');
-			$layer.find('.container').removeClass('small');
-
-			$.ajax({
-				url: url,
-				success: function (html) {
-					var $html = $(html),
-						$title = $html.filter('h2'),
-						$header = $layer.find('.header'),
-						$content = $layer.find('.content');
-
-					$header.append(
-						$title.text()
-					);
-
-					$title.remove();
-
-					$content.html($html);
-				}
-			});
+			$.openTechInfo(techId);
 		});
 
 		this.content = function (html) {
@@ -918,9 +1271,6 @@ function init(engine2d, duration) {
 					(Math.abs(difference.x) > engine2d.size.x * 0.75) ||
 					(Math.abs(difference.y) > engine2d.size.y * 0.75)
 				) {
-					console.log('remove ' + entity.handleObject);
-					console.log(entityHandles);
-
 					engine2d.functions.deleteActor(entity);
 				}
 			}

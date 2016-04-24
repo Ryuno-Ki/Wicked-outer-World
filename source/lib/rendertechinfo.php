@@ -14,15 +14,27 @@ class RenderTechInfo extends RendererAbstract {
 	}
 
 	/**
+	 * @TODO Make it real json.
+	 *
 	 * @return string
 	 */
 	public function bodyHtml() {
-		$neededLevel = i18n('neededLevel', $this->item->level());
+		$level = $this->item->level();
+		$neededLevel = $level > 0
+			? i18n('neededLevel', $level)
+			: i18n('noLevelRequirement');
+
+		$class = ' variable';
+		$account = Game::getInstance()->account();
+		if ($account && $level > $account->level()) {
+			$class = ' critical';
+		}
+
 
 		return "
 <h2>{$this->item->name()}</h2>
 <div>
-	<p class='critical bold'>{$neededLevel}</p>
+	<p class='bold{$class}'>{$neededLevel}</p>
 	<p>{$this->item->description()}</p>
 	{$this->techData()}
 </div>";
@@ -105,10 +117,9 @@ class RenderTechInfo extends RendererAbstract {
 			$burstShots = i18n('perShot');
 		}
 
-		$ammunitionBurst = $burst;
-
 		$ammunition = $this->item->ammunitionItem();
 		if ($ammunition) {
+			$ammunitionBurst = $burst === '-' ? 1 : $burst;
 			$ammunitionType = $ammunition->name().' '.i18n('perShot');
 		}
 		else {
@@ -262,7 +273,7 @@ class RenderTechInfo extends RendererAbstract {
 	<td class='variable'>".i18n('energy')."</td>
 </tr>";
 
-		return html::defaultTable($html);
+		return html::defaultTable($html) . "<hr>" . i18n('reactorHelp');
 	}
 
 	/**
@@ -289,7 +300,7 @@ class RenderTechInfo extends RendererAbstract {
 	<td class='variable'>".i18n('seconds')."</td>
 </tr>";
 
-		return html::defaultTable($html);
+		return html::defaultTable($html) . "<hr>" . i18n('driveHelp');
 	}
 
 	/**

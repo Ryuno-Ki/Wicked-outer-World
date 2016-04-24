@@ -1,45 +1,43 @@
 <?php
 
-class Message extends Lisbeth_Entity {
-	protected $table = 'messages';
-
+class Message extends Lisbeth_Entity_Messages {
 	/**
 	 * @param Account $account
 	 * @return bool
 	 */
 	public function isRecipient(Account $account) {
-		return ($this->value('recipientId') == $account->id());
+		return ($this->get('recipientId') == $account->id());
 	}
 
 	/**
-	 * @param Account $sender
-	 * @param Account $recipient
 	 * @param string $title
 	 * @param string $message
+	 * @param Account $recipient
+	 * @param Account|null $sender
 	 */
 	public static function send(
-		Account $sender,
-		Account $recipient,
 		$title,
-		$message
+		$message,
+		Account $recipient,
+		Account $sender = null
 	) {
 		$database = new Lisbeth_Database();
 
-		$senderName = $sender->name();
-		$senderName = $database->escape($senderName);
+		$senderId = 0;
+		$senderName = 'battleSystem';
 
-		$title = $database->escape($title);
-		$message = $database->escape($message);
+		if ($sender) {
+			$senderId = $sender->id();
+			$senderName = $sender->name();
+		}
 
-		$sql = "
-			INSERT INTO `messages`
-			SET
-				`recipientId` = {$recipient->id()},
-				`senderId` = {$sender->id()},
-				`senderName` = '{$senderName}',
-				`title` = '{$title}',
-				`message` = '{$message}',
-				`created` = UNIX_TIMESTAMP(NOW());";
-		$database->query($sql)->freeResult();
+		self::create(array(
+			'recipientId' => $recipient->id(),
+			'senderId' => $senderId,
+			'senderName' => $senderName,
+			'title' => $title,
+			'message' => $message,
+			'created' => TIME
+		));
 	}
 }
